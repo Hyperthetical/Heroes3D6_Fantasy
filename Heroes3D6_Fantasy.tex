@@ -32,7 +32,9 @@
 \usepackage{lmodern}
 
 
-\subimport{../}{dice}
+\newcommand{\dicediffbase}{11}
+\newcommand{\dicenoprof}{-1}
+\newcommand{\dicecritlvl}{4}
 
 \newcommand{\textlf}[1]{\textbf{\titlecap{#1}}}
 \newcommand{\textlfirst}[1]{\textbf{\textit{\titlecap{#1}}}}
@@ -90,7 +92,7 @@ The elves' popular view of humans is that they are flighty and lacking-in-seriou
 Humans are extremely adaptable and may select an extra associated skill for their background.
 
 \subsection{Elves}
-Though elves somewhat resemble humans at first glance, there is a world of difference on closer examination. Firstly, elves are incapable of digesting meat. They are vegetarian with a preferred diet of sweet, sugary things. Second, their manner of reproduction is completely different, elven eggs gestate externally in a similar manner to those of fish. Additionally elven blood is clear, it contains no iron, and their hearts are far smaller than that of a man, as capillary action plays a major role in their circulatory systems.
+Though elves somewhat resemble humans at first glance, there is a world of difference on closer examination. Firstly, elves are incapable of digesting meat. They are vegetarian with a preferred diet of sweet, sugary things. Second, their manner of reproduction is completely different, elven eggs gestate externally in a similar manner to those of fish. Additionally elven blood is clear, as it contains no iron, and their hearts are far smaller than that of a man, as capillary action plays a major role in their circulatory systems.
 
 Elves have high cheek bones and very narrow, angular features. Their skin varies in shade between green and light brown and has a similar texture to smooth tree bark. Their eyes range in colour from yellow, through green and blue to white, the pupils of which are narrow and cat-like. Elves are short by human standards, and are also of a slighter build. All of them posses the curious ability to alter their hair colour at will. However, if they are not careful it will change on its own to reflect their mood. 
 
@@ -209,9 +211,9 @@ These perks do \textbf{not} occupy equipment slots for passive or active \textlf
 The character has trained in the use of the bow, no longer suffering untrained penalties.
 
 \subsection{Arcane learning (3/7)}
-The character has experience wielding magic and thus can learn spells from Chapter~\ref{chap:magic} for experience points. The character may now spend up to 3 additional experience on spells. If this is chosen at character creation it costs 3 experience, the cost is 7 otherwise. 
+The character has experience wielding magic and thus can learn spells from Chapter~\ref{chap:magic} for experience points. If this is chosen at character creation it costs 3 experience, the cost is 7 otherwise. 
 
-A character who picks this may choose 3 spells to learn from the following list: Sorcerous blast~\ref{spell:sorc-blast},Bend light~\ref{spell:bend-light}, Minor telekinesis~\ref{spell:min-tele}, Summon familiar~\ref{spell:familiar}, Overgrowth~\ref{spell:overgrowth}, Ignite~\ref{spell:ignite}, Illuminate~\ref{spell:illuminate}, Transfix~\ref{spell:transfix}, Orb of light~\ref{spell:orb-light}, Arcane armour~\ref{spell:arcane-armour}, Blind ray~\ref{spell:blind-ray}, Flare~\ref{spell:flare}, and Stone sense~\ref{spell:stone-sense}.
+A character who picks this gains Sorcerous blast~\ref{spell:sorc-blast} and may choose one spell to learn from the following list: Bend light~\ref{spell:bend-light}, Minor telekinesis~\ref{spell:min-tele}, Summon familiar~\ref{spell:familiar}, Overgrowth~\ref{spell:overgrowth}, Ignite~\ref{spell:ignite}, Illuminate~\ref{spell:illuminate}, Transfix~\ref{spell:transfix}, Orb of light~\ref{spell:orb-light}, Arcane armour~\ref{spell:arcane-armour}, Blinding ray~\ref{spell:blind-ray}, Flare~\ref{spell:flare}, and Stone sense~\ref{spell:stone-sense}.
 
 \section{Active perks}
 These open up new actions that a character can make and they must occupy an equipment slot for active \textlf{perks} to be usable.
@@ -276,10 +278,10 @@ The character is highly familiar with black-powder weapons, as such they no long
 This \textlf{perk} from the core rules may apply to the following weapon categories: Bladed (sword-type), Axes, Pole-weapons, Blunt (hammers,clubs,maces,cudgels), Extended (whip,chain,flail), Crossbows, Bows, Throwing (applies to all thrown weapons), and Shield (an \textlf{edge} bonus to \textlf{deflect} with shields).
 
 \subsection{Witch hunter (3)}
-The character gains an \textlf{edge} bonus to \textlf{resist} and \textlf{deflect} spells.
+The character gains an \textlf{edge} bonus to \textlf{resist (R)} versus spells.
 
 \subsubsection{Upgrade: Burn the witch (3)}
-(Requires \textlf{Witch hunter}) Gain an \textlf{edge} bonus to damage rolls against magic users.
+(Requires \textlf{Witch hunter}) Gain an \textlf{edge} bonus to damage rolls against magic users, but only with flaming weapons.
  
 
 
@@ -287,9 +289,6 @@ The character gains an \textlf{edge} bonus to \textlf{resist} and \textlf{deflec
 
 
 \chapter{Character Skills}
-
-\section{Working Professionally}
-A character makes 16 copper per hour per skill level while performing his profession. If he has the \textlf{Master perk} for the profession the income rate triples.
 
 \section{Magic (Wit)}
 \textlf{Magic} is the skill invoked to cast spells. More details can be found in Chapter~\ref{chap:magic}.
@@ -309,10 +308,10 @@ Potion & D & Effects & Time & Ingredients & Cost \\
 Base Solution & 4 & Ingredient for all below & - & Water, Alcohol,  & 1 s \\
  & & & & Copper Sulphate & \\
 \hline
-Might &  9/14 & +1/+2 Might & 10 & Troll teeth & 25/50 s \\
-Cunning & 9/14 & +1/+2 Cunning & 10 & Mus-folk hair & 25/50 s \\
+Might &  13 & +1 Might & 10 & Troll teeth & 25/50 s \\
+Cunning & 13 & +1 Cunning & 10 & Mus-folk hair & 25/50 s \\
 %Swiftness & 9/14 & +1/+2 Agility & 10 & Snake scales & 25/50 s \\
-Sorcery & 10/15 &\textlf{edge} bonus - spells & 10 & Residual crystals & 50/100 s\\
+Sorcery & 12 &\textlf{edge} bonus - spells & 10 & Residual crystals & 50/100 s\\
 Iron-flesh & 8/13 & +1/+2 Toughness & 10 & Fine granite power & 15/30 s \\
 Fire-blood & 11 & Enrage & - & Trog blood & 35 s \\
 Hawk-eye & 12 & \textlf{edge} Awareness/Aim & 20 & Eagle feathers & 15 s \\
@@ -323,13 +322,13 @@ Healing & 11 & Remove a Wounded card & - & Mend-well root & 25 s \\
 Restoration & 10 & Cure 1 Condition & - & Common herbs & 2 s \\
 Peace & 14 & Cure all Conditions & - & Nightshade,  & 30 s \\
  & & & & Mend-well leaves & \\
-Competence & 10/15 & \textlf{edge} bonus Professions & 60 & Gold, Silver & 50/100 s \\
+Competence & 14 & \textlf{edge} bonus Professions & 60 & Gold, Silver & 50/100 s \\
 Giant-blood & 16 & Become Large Creature  & 10 & Giant Blood & 5 g \\
  & & (+2 Might) & & & \\
-Camoflage & 7/11 & \textlf{Stealth edge} bonus & 20 & Nightshade, Ivy root & 5 s \\
-Invisibility & 18 & Invisibility & 5 & Ectoplasm & 10 g \\
-Haste & 18 & +1 action point per round & 5 & Dire-wolf Heart & 5 g \\ 
-Explosive & 14 & radius 1, Burst 1, Power +1 & - & Acid, coal, salt-peter & 50 s \\
+Camoflage & 11 & \textlf{Stealth edge} bonus & 20 & Nightshade, Ivy root & 5 s \\
+Invisibility & 15 & Invisibility & 5 & Ectoplasm & 10 g \\
+Haste & 15 & +1 action point per round & 5 & Dire-wolf Heart & 5 g \\ 
+Explosive & 12 & radius 1, Burst 1, Power +1 & - & Acid, coal, salt-peter & 50 s \\
 \hline
 \end{tabular}
 \label{tab:alch}
@@ -347,20 +346,16 @@ A Metal Smith is capable of crafting metal tools or suits of armour from the Bas
   \begin{tabular}{|l|l|l|l|}
     \hline
     Name & Type & Materials/Cost & Difficulty\\ [0.5ex]
-    \hline
-    Gambeson & L & Hides, Cloth/30 s & 8\\
-    \hline
-    Mail hauberk and & M & Steel Bars, Cloth, Hides/1 g 50 s & 10\\
+    Mail hauberk and & M & Steel, Cloth, Hides/1 g 50 s & 10\\
     gambeson & & & \\
-    Brigandine and mail & M & Steel Bars, Hides/3 g & 12 \\  
+    Brigandine and mail & M & Steel, Hides/3 g & 11 \\  
     \hline
-    Brigandine and plate & H & Steel Bars, Hides/4 g & 14\\
-    Full plate & H & Hides, Steel Bars/10 g & 17\\
+    Brigandine and plate & H & Steel, Hides/4 g & 12\\
+    Full plate & H & Hides, Steel/10 g & 15\\
     \hline
-    Barding (for Horses) & H & Hides, Steel Bars/7 g & 13\\
+    Barding (for Horses) & H & Hides, Steel/7 g & 11\\
     \hline
-    Shield & H & Wooden Planks, Leather, Iron Bands/30 s & 13\\
-%    Tower Shield & H & Steel Bars, Leather, Straps/1 g 50 s & 15\\
+    Shield & H & Wooden Planks, Leather, Iron Bands/30 s & 12\\%    Tower Shield & H & Steel, Leather, Straps/1 g 50 s & 15\\
     \hline
     \end{tabular}
 \end{table}
@@ -377,50 +372,53 @@ A Weapon Smith can craft his own fine weaponry to use or sell. See the Crafting 
     \hline
     Name & Materials/Cost & Difficulty\\ [0.5ex]
     \hline
-    Short Sword & Steel Bars, Leather/10 s & 8\\ 
-    Dagger & Steel Bars, Leather/2 s & 6\\
-    Long Sword & Steel Bars, Leather/30 s & 10\\
-    Horse Sword & Lots of Steel Bars, Leather/1 g & 14\\
-    Great Sword & Lots of Steel Bars, Leather/35 s & 12\\
-    Rapier & Steel Bars, Leather/15 s & 12\\
-    Sword-Breaker & Steel bars, Leather/10 s & 11 \\
+    Arming Sword & Steel, Leather/10 s & 8\\ 
+    Dagger & Steel, Leather/2 s & 8\\
+    Long Sword & Steel, Leather/30 s & 10\\
+    Horse Sword & Lots of Steel, Leather/1 g & 14\\
+    Great Sword & Lots of Steel, Leather/35 s & 12\\
+    Rapier & Steel, Leather/15 s & 12\\
+    Sword-Breaker & Steel, Leather/10 s & 10 \\
     \hline
-    Battle Axe & Steel Bars, Leather/10 s & 9\\ 
-    Bearded Axe & Steel Bars, Leather/10 s & 10\\ 
-    Throwing Axe & Steel Bars, Leather/5 s & 11\\ 
-    Great Axe & Steel Bars, Leather/40 s & 10\\ 
-    Long Axe & Steel Bars, Pole, Leather/40 s & 11\\ 
-    Bearded Long Axe & Steel Bars, Pole, Leather/40 s & 11\\ 
+    Battle Axe & Steel, Leather/10 s & 9\\ 
+    Bearded Axe & Steel, Leather/10 s & 10\\ 
+    Throwing Axe & Steel, Leather/5 s & 11\\ 
+    Great Axe & Steel, Leather/40 s & 10\\ 
+    Long Axe & Steel, Pole, Leather/40 s & 11\\ 
+    Bearded Long Axe & Steel, Pole, Leather/40 s & 11\\ 
     \hline
-    Javelin & Short Pole, Steel Bars/2 s & 9\\ 
+    Javelin & Short Pole, Steel/2 s & 9\\ 
     Quarter Staff & Wood/- & 7\\
-    Spear & 3 m Pole, Steel Bars/6 s & 7\\
-    Pike & 4 m Pole, Steel Bars/10 s & 10\\
-    Glaive & 2 m Pole, Steel Bars/25 s & 12\\
-    Halberd & 2 m Pole, Steel Bars/75 s & 14\\
-    Lucerne Hammer & 2 m Pole, Steel Bars/70 s & 14\\
-    Ranseur & 2 m Pole, Steel Bars/20 s & 11\\
-    Spetum & 2 m Pole, Steel Bars/30 s & 13\\
-    Lance & Heavy Pole, Steel Bars/40 s & 11\\
+    Spear & 3 m Pole, Steel/6 s & 7\\
+    Pike & 4 m Pole, Steel/10 s & 10\\
+    Glaive & 2 m Pole, Steel/25 s & 12\\
+    Halberd & 2 m Pole, Steel/75 s & 14\\
+    Lucerne Hammer & 2 m Pole, Steel/70 s & 14\\
+    Ranseur & 2 m Pole, Steel/20 s & 11\\
+    Partisan & 2 m Pole, Steel/30 s & 11\\
+    Pole-axe & 2 m Pole, Steel/70 s & 14\\
+    Lance & Heavy Pole, Steel/40 s & 11\\
     \hline
     Cudgel & Wood/50 c & 6\\
-    Club & Wood/2 s & 8\\
-    War Hammer & Handle, Steel Bars, Leather/20 s & 13 \\
-    Great Hammer & Pole Handle, Steel Bars, Leather/30 s & 15 \\
-    Maul & Pole Handle, Steel Bars, Leather/40 s & 13 \\
-    Mace & Handle, Steel Bars, Wood, Leather/2 s & 6 \\
-    Great Mace & Pole Handle, Steel Bars, Leather/30 s & 9 \\
-    \hline
-    Short Bow & Wood, Bow String/10 s & 13\\
-    Long Bow & Yew Wood, Bow String/60 s & 16\\
-    \hline
-    Hand Crossbow & Wood/10 s & 14 \\ 
-    Light Crossbow & Wood, Steel Bars/30 s & 11\\
-    Heavy Crossbow & Wood, Steel Bars/50 s & 16\\
+    Club & Wood/2 s & 7\\
+    War Hammer & Handle, Steel, Leather/20 s & 12 \\
+    Great Hammer & Pole Handle, Steel, Leather/30 s & 13 \\
+    Maul & Pole Handle, Steel, Leather/40 s & 13 \\
+    Mace & Handle, Steel, Wood, Leather/2 s & 7 \\
     \hline
     Whip & Hides/10 s & 9\\
-    Chain & Steel Bars/15 s & 10\\
-    Flail & Steel Bars/25 s & 13\\    
+    Chain & Steel/15 s & 10\\
+    Flail & Steel/25 s & 12\\   
+    Grand Flail & Steel/70 s & 13\\ 
+    \hline
+    Short Bow & Wood, Bow String/10 s & 12\\
+    Long Bow & Yew Wood, Bow String/60 s & 14\\
+    Recurve bow & Wood, horn, Bow String/1g 50s & 16 \\
+    \hline
+    Hand Crossbow & Wood/40 s & 13 \\ 
+    Light Crossbow & Wood, Steel/60 s & 11\\
+    Repeater Crossbow & Wood, Steel/60 & 12 \\
+    Heavy Crossbow & Wood, Steel/4 g & 14\\
     \hline
     \end{tabular}
 \end{table}
@@ -428,7 +426,7 @@ A Weapon Smith can craft his own fine weaponry to use or sell. See the Crafting 
 
 
 \section{Tailor (Cunning)}
-With appropriate tools a \textlf{Tailor} can craft clothing or any other cloth products. The \textlf{difficulty} is based on how fine the clothes should be. Wizards robes or other magical garments can also be enchanted, see Section~\ref{sec:enchant}. The design and exact look of the clothing is up to the tailor himself, the ingredients only determine the quality. See the Crafting Cloth Table \ref{tab:craft-clothes}. In general, clothes provide no bonus to defence and the level of success affects how fine and fancy they appear.
+With appropriate tools a \textlf{Tailor} can craft clothing or any other cloth products. The \textlf{difficulty} is based on how fine the clothes should be. Wizards robes or other magical garments can also be enchanted, see Section~\ref{sec:enchant}. The design and exact look of the clothing is up to the tailor himself, the ingredients only determine the quality. See the Crafting Cloth Table \ref{tab:craft-clothes}. In general, clothes provide no bonus to defence (notable exception being a Gambeson) and the level of success affects how fine and fancy they appear.
 
 \begin{table}[!ht]
 	\centering
@@ -439,8 +437,9 @@ With appropriate tools a \textlf{Tailor} can craft clothing or any other cloth p
 		Name & Materials/Cost & Difficulty\\ [0.5ex]
 		\hline
 		Rough Garments & Rough Wool, Course thread/5 c & 8\\
+		Gamebson & Thick linen, Course Thread/14 s & 8 \\
 		Course Robe & Rough Wool, Course Thread/10 c & 9\\
-		Neat Garments & Smooth Wool, Course Thread/20 c & 10\\
+		Neat Garments & Smooth Wool or Linen, Course Thread/20 c & 10\\
 		Fine Garments & Fine Wool, Embroidered Thread/10 s & 12\\
 		Silk Robe & Silk, Silver Thread/50 s & 14\\
 		Rich Garments & Silk, Fine Wool, Gold Thread/1 g & 14\\
@@ -504,16 +503,16 @@ One (plus \textlf{Wit}) animated items, can be commanded at a cost of one action
 %\subsubsection{Righteous (12)}
 %\textlf{Prefix}. The weapon's wielder gains 1 point of \textlf{Divine Favour} (provided he is eligible) when he defeats a foe in combat. Material cost: 30 g.
 
-\subsubsection{Masterful (14)}
+\subsubsection{Masterful (13)}
 \textlf{Prefix}. The weapon applies an \textlf{edge} penalty to \textlf{Resist} attempts made against the wielder's spells or abilities. Material cost: 35 g.
 
-\subsubsection{Impaling (17)}
+\subsubsection{Impaling (14)}
 \textlf{Prefix}. The weapon gains \textlf{Rending}. Material cost: 42 g.
 
-\subsubsection{Thundering (17)}
+\subsubsection{Thundering (14)}
 \textlf{Prefix}. The weapon \textlf{Cripples} victims of its \textlf{Critical Hits}. Material cost: 42 g.
 
-\subsubsection{Vorpal (20)}
+\subsubsection{Vorpal (16)}
 \textlf{Prefix}. Upgrades \textlf{Lethality} of the weapon on \textlf{critical hits}. Material cost: 60 g.
 
 
@@ -527,25 +526,25 @@ One (plus \textlf{Wit}) animated items, can be commanded at a cost of one action
 \subsubsection{Finesse (11)}
 \textlf{Suffix}. \textlf{Critical Failures} made with the weapon may be re-rolled. Material cost: 22 g.
 
-\subsubsection{Force (12)}
+\subsubsection{Force (11)}
 \textlf{Suffix}. The weapon's attacks knock down victims that are \textlf{Staggered}. Material cost: 25 g.
 
 \subsubsection{Culling (12)}
 \textlf{Suffix}. Attacks made against targets which are \textlf{Crippled}, \textlf{Knocked Down}, or \textlf{Bleeding} benefit from a \textlf{lethality} upgrade. Material cost: 30 g.
 
-\subsubsection{Laceration (14)}
+\subsubsection{Laceration (13)}
 \textlf{Suffix}. The weapon inflicts \textlf{Bleeding} when it succeeds on a damage roll. Material cost: 32 g.
 
-\subsubsection{Butchery (16)}
+\subsubsection{Butchery (14)}
 \textlf{Suffix}. The weapon has \textlf{Heavy Weapon} +1. Material cost: 40 g.
 
-\subsubsection{Devastation (16)}
+\subsubsection{Devastation (14)}
 \textlf{Suffix}. The weapon has \textlf{Burst} +1. Material cost: 40 g.
 
-\subsubsection{Arcing (17)}
+\subsubsection{Arcing (14)}
 \textlf{Suffix}. The spells cast by the wielder may add one extra target. Material cost: 42 g.
 
-\subsubsection{Determination (18)}
+\subsubsection{Determination (15)}
 \textlf{Suffix}. Attacks with the enchanted weapon have an \textlf{edge} bonus to \textlf{Aim}. Material cost: 45 g.
 
 
@@ -555,22 +554,22 @@ One (plus \textlf{Wit}) animated items, can be commanded at a cost of one action
 \subsubsection{Resilient (10)}
 \textlf{Prefix}. Grants the wearer + 1 to \textlf{Resolve} checks. Material cost: 25 g.
 
-\subsubsection{Feather-light (12)}
+\subsubsection{Feather-light (11)}
 \textlf{Prefix}. The armour grants the wearer +1 range to his normal movement. Material cost: 30 g.
 
-\subsubsection{Unflinching (13)}
+\subsubsection{Unflinching (12)}
 \textlf{Prefix}. This grants the armour the ability to ignore the first \textlf{endurance} point lost each turn. Material cost: 32 g.
 
 %\subsubsection{Martyrdom (13)}
 %\textlf{Prefix} (Martyr's). When the wearer suffers a wound he gains 1 action point (up to a maximum of 1 per turn). Material cost: 32 g. 
 
-\subsubsection{Skilful: X (15)}
+\subsubsection{Skilful: X (14)}
 \textlf{Prefix}. This grants the armour's wearer + 1 to checks for skill X. Material Cost: 37 g. When naming the armour one can alter the prefix to suit the skill, for example: sneaky leather armour would add + 1 \textlf{Stealth}.
 
-\subsubsection{Unshakeable (16)}
+\subsubsection{Unshakeable (14)}
 \textlf{Prefix}. This grants the armour the \textlf{Bulwark} rule. Material cost: 40 g.
 
-\subsubsection{Adamant (18)}
+\subsubsection{Adamant (15)}
 \textlf{Prefix}. This grants the armour the \textlf{Adamant} rule. Material cost: 45 g.
 
 
@@ -581,13 +580,13 @@ One (plus \textlf{Wit}) animated items, can be commanded at a cost of one action
 \subsubsection{Evasion (11,+4)}
 \textlf{Suffix}. The armour grants + 1 \textlf{Deflect} (+ 1 per 4 added \textlf{difficulty}). Material cost: 25 g plus 10 g per extra point.
 
-\subsubsection{Mirrored (13)}
+\subsubsection{Mirrored (12)}
 \textlf{Suffix}. This enchantment can only be used upon a shield. While using the shield a wielder may use his \textlf{Deflect} in place of \textlf{Resolve} when making \textlf{Resist} attempts against spells. Material Cost: 27 g.
 
-\subsubsection{Destruction (15)}
+\subsubsection{Destruction (14)}
 \textlf{Suffix}. The armour grants + 1 \textlf{Power} for spells. Material cost: 37 g.
 
-\subsubsection{Attribute (16)}
+\subsubsection{Attribute (17)}
 \textlf{Suffix}. The armour grants the wearer + 1 \textlf{Attribute}. Material cost: 40 g. Where \textlf{Attribute} is a chosen \textlf{Natural Attribute} and the \textlf{suffix} name will be something like Gauntlets of Might. 
 
 
@@ -608,14 +607,11 @@ Spells are cast as actions like any other. Their complexity means that the caste
 \subsection{Long casts}
 If a spell costs 2 or more action points then if the caster suffers any successful damage rolls during the round, he has an \textlf{edge} penalty on all subsequent rolls associated with the spell.
 
-\subsection{Resist}
-A Resist check involves the victim making a \textlf{Resolve} check against \dicediffbase + the caster's magic \textlf{power}. 
+\subsection{Resist(X)}
+A Resist(X) check involves the victim making an opposed roll with their natural attribute X against the caster who adds -1 or \textlf{Might}, depending on \textlf{magic} skill proficiency. 
 
 \subsection{Dispel}
 A caster can use his spell-weaving skills to nullify the spells cast by another magic user. This can be used in place of \textlf{Resist} or as 1 action point prepared action, it involves a \textlf{magic} check with the score the spell was cast on as \textlf{difficulty}. If the check succeeds the spell is nullified.
-
-\subsection{Deflect}
-Spells which fire a projectile or project over an area allow the victim the chance to dodge, this involves a \textlf{Deflect} check using the caster's magic \textlf{aim} score.
 
 \subsection{Persistent spells}
 These spells have a long duration but concentration must be maintained to keep them functioning so only one can be functioning at a time. If a character is disabled or killed then his \textlf{persistent} spell ends. Otherwise if he suffers a successful damage roll he must make a \textlf{resolve} check against $\dicediffbase$ plus the \textlf{power} of the attack, if he fails the \textlf{persistent} spell ends.
