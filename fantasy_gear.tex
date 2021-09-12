@@ -103,19 +103,19 @@ Bomb & 20 s & 1 & 1 & - & C & +1 & Burst 1, Throw, Radius \\
 		\hline
 		Light Armour & & &  \\
 		\hline
-		Gambeson & 20 s & L & 10  \\
+		Gambeson & 20 s & L & +1  \\
 		\hline
 		Medium Armour & & &  \\
 		\hline
-		Mail hauberk and gambeson & 2 g & M & 12   \\ 
-		Brigandine and mail  & 4 g & M & 13  \\
+		Mail hauberk and gambeson & 2 g & M & +3   \\ 
+		Brigandine and mail  & 4 g & M & +4  \\
 		\hline
 		Heavy Armour & & &  \\
 		\hline
-		Brigandine and plate & 6 g & H & 14 \\
-		Full Plate  & 12 g & H & 16  \\
+		Brigandine and plate & 6 g & H & +5 \\
+		Full Plate  & 12 g & H & +6  \\
 		\hline
-		Barding (Horse)& 8 g & H & 15 \\
+		Barding (Horse)& 8 g & H & +4 \\
 		\hline
 	\end{tabular}
 	\caption{Shields}
@@ -135,12 +135,6 @@ Bomb & 20 s & 1 & 1 & - & C & +1 & Burst 1, Throw, Radius \\
 
 
 \section{Weapon Special Rules}
-
-\subsection{Cumbersome}
-Weapons with this rule are either massively heavy or just awkward to manoeuvre. They cost an extra action point to make attacks with.
-
-\subsection{Master crafted}
-This grants the item + 1 Power/Toughness (Weapon/Armour). This triples the cost of the item. 
 
 \subsection{Throw}
 Weapons with the \textlf{Throw} rule are finely balanced for use as projectiles. Thus, weapons without this rule confer an \textlf{edge} penalty to \textlf{Aim}.
@@ -182,8 +176,6 @@ This weapon fires a scatter of shot in a cone, hitting up to 2 targets in a sing
 \subsection{Armour Weights}
 Armour is listed with a weight appropriate to medium sized armour, that is, armour made for medium sized creatures to wear. Armour for smaller creatures weighs half as much and armour for Large creatures weighs twice as much, larger armour weigh six times as much as medium armour.
 
-\subsection{Armour Penalties}
-Weighty armour makes certain tasks more difficult, like dodging, climbing, and swimming. To represent this, \textlf{Heavy Armour} applies an \textlf{edge} penalty to \textlf{Athletics}, \textlf{Sneak and Hide}, as well as \textlf{Deflect checks}; for \textlf{Medium Armour} this penalty does not apply to \textlf{Deflect} (Light Armour has no such problems). Characters in \textlf{heavy armour} also have to spend an action point to get up if \textlf{knocked down} and suffer \textlf{edge} penalties in \textlf{opposed rolls} if opponents try to keep them down.
 
 \subsection{Putting On and Removing Armour}
 Even heroes seldom sleep in full-plate armour, so there are then times when the speed at which a character puts on or removes armour might matter. It requires four action points to put on \textlf{light armour} or two to strap on a shield. However, it takes 1 minute to put on \textlf{medium armour} but it takes 5 minutes to put on \textlf{heavy armour} and requires that the wearer has assistance in putting it on. \textlf{Medium} or \textlf{light armour} can be put on in a rush, doing so means that armour might not be precisely adjusted in order function to it's full effect, this takes only four action points for medium armour or two action point for \textlf{light armour}, but reduces the \textlf{Toughness} of the armour by 1 while it is worn in this sloppy fashion.
@@ -195,19 +187,18 @@ Removing \textlf{light armour} takes 1 minute, \textlf{medium armour} takes 2 mi
 \label{sec:shields}
 Shields add a + 2 bonus to the bearer's \textlf{Deflect} score. 
 
-\subsection{Bulwark}
-Heavy plates of steel turn all but the most determined blows. Armour with this rule negates the bonuses conferred by the \textlf{Penetration} rule on incoming attacks.
-
-\subsection{Adamant}
-Some armour is so thick and heavy that it is almost impervious, even to weapons that shear through other protective gear. This grants immunity to \textlf{Rending} effects.
-
-
 
 \section{Weapon Enhancements}
-A single weapon may have only two enhancements, but cannot have more than one that is labelled 'Exclusive'.
+A weapon may have one quality enhancement and only two other enhancements. However, weapons cannot have more than one that is labelled 'Exclusive'.
 
 %\subsection{Crank and Magazine}
 %(Crossbow only - Exclusive) The weapon is fitted with a complex mechanical crank and ammunition store, allowing for rapid firing. This allows crossbows with a \textlf{Reload} rule to fire twice before having to reload. Other crossbows may gain \textlf{Burst} + 1 when firing at the cost of a \textlf{Reload} 1 action next turn. Cost: 8 g.
+
+\subsection{Fine}
+(Quality enhancement) This grants the item + 1 power. This doubles the cost of the item. 
+
+\subsection{Masterly}
+(Quality enhancement) This grants the item + 2 Power. This quadruples the cost of the item.
 
 \subsection{Expanded Bolt Rack}
 (Crossbow only - Exclusive) The weapon is fitted with expanded armatures and space for two bolts. It can thus fire two bolts with a single trigger release. This grants \textlf{Burst} + 1 on attacks made with the crossbow. Cost: Base cost x 3 + 1 g. 
@@ -225,35 +216,41 @@ A single weapon may have only two enhancements, but cannot have more than one th
 The weapon is weighted and broadened. This causes it to inflict damage over a wider area, granting it \textlf{Burst} + 1. Cost: 8 g. 
 
 \subsection{Butchering}
-(Requires Cleaving) This adds \textlf{Cleave} + 1 to the weapon. Cost: 15 g.
+This adds \textlf{Cleave} + 1 to the weapon. Cost: 15 g.
 
 \subsection{Crushing}
 The weapon is designed to pact a hefty blunt wallop. This adds an extra instance of the \textlf{Stagger} effect to any target wounded by the weapon. Cost: 8 g.
 
 \subsection{Thunderous}
-(Requires Crushing) \textlf{Critical Hits} from this weapon knock the victim down. Cost: 15 g.
+\textlf{Critical Hits} from this weapon knock the victim down. Cost: 15 g.
 
 \subsection{Serrated}
 Serrations on the weapon leave bleeding wounds on the target. Victims of this weapon suffer \textlf{Bleeding} when it causes damage to them. Cost: 8 g.
 
 \subsection{Barbed}
-(Requires Serrated) Savagely curved barbs ensure that existing wounds are torn wider. \textlf{Bleeding} targets are \textlf{Vulnerable} for 1 round if damaged by the weapon. Cost: 15 g.
+Savagely curved barbs ensure that existing wounds are torn wider. \textlf{Bleeding} targets are \textlf{Vulnerable} for 1 round if damaged by the weapon. Cost: 15 g.
 
 \subsection{Impaling}
 Carefully designed tapering allows well-placed strikes to plunge deep into the victim's body. Grants \textlf{Rending} to the weapon's attacks. Cost: 8 g.
 
 \subsection{Eviscerating}
-(Requires Impaling) Victims of \textlf{Penetrating Hits} are \textlf{Vulnerable} for 1 round. Cost: 15 g.
+Victims of \textlf{Penetrating Hits} are \textlf{Vulnerable} for 1 round. Cost: 15 g.
 
 
 \section{Armour Enhancements}
-A piece of armour may only have one such enhancement.
+Armour may have one quality enhancement and only one other enhancement.
+
+\subsection{Fine}
+(Quality enhancement) This grants the item + 1 Toughness. This doubles the cost of the item.
+
+\subsection{Masterly}
+(Quality enhancement) This grants the item + 2 Toughness. This quadruples the cost of the item.
 
 \subsection{Thick Padding}
-A hefty layer of cloth padding soaks up the impact of musket fire. This reduces crushing lethality \textlf{Black Powder} weapons to normal \textlf{lethality} but increases the armour penalty on \textlf{Athletics} and \textlf{Sneak and Hide} by another \textlf{edge} penalty. Cost: 50 s.
+A hefty layer of cloth padding soaks up the impact of musket fire. This reduces crushing lethality \textlf{Black Powder} weapons to normal \textlf{lethality} but adds an \textlf{edge} penalty on \textlf{Athletics} and \textlf{Stealth}. Cost: 50 s.
 
 \subsection{Intricate Scale-work}
-Fine layers of scaled plates distribute impact. This incurs a -1 \textlf{Burst} penalty (minimum 1 damage roll) to any attacks  made against the wearer. Cost: 12 g. \textlf{Medium} or \textlf{heavy armour} only.
+Fine layers of scaled plates distribute impact. This incurs a -1 \textlf{Burst} penalty (minimum 1 damage roll) to any attacks made against the wearer. Cost: 12 g. \textlf{Medium} or \textlf{heavy armour} only.
 
 \subsection{Heavily Reinforced}
 Nothing like just adding lots of extra steel. Adds the \textlf{Adamant} rule. Cost: 10 g. \textlf{Medium} or \textlf{heavy armour} only.
@@ -262,7 +259,7 @@ Nothing like just adding lots of extra steel. Adds the \textlf{Adamant} rule. Co
 Careful use of straps and weight distribution makes the armour feel so light you could dance in it (this is still not recommended). This negates a chosen \textlf{edge} penalty incurred by the armour. Cost: 6 g. \textlf{Medium} or \textlf{heavy armour} only.
 
 \subsection{Knuckle-Blades}
-Punching people is easier with steel blades on the knuckles of your gloves. \textlf{edge} bonus to unarmed damage Rolls. Cost: 50 s.
+Punching people is easier with steel blades on the knuckles of your gloves. This granst + 1 \textlf{power} to unarmed damage rolls. Cost: 50 s.
 
 \subsection{Armour Spikes}
 Sharpened protrusions or heavy studs set in the surface of the armour can make attacking the wearer a real hazard. This can be applied to any \textlf{Medium} or \textlf{Heavy armour} piece, enemies grappling with the wearer have an \textlf{edge} penalty to \textlf{Grapple} checks. Cost 20 s.
