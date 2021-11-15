@@ -38,12 +38,12 @@
 		Javelin & 5 s & 1 & N & - & - & - & Rending, Throw 2\\
 		Quarter Staff & 10 c & 2 &  N & - & - & - & Disarm,Reach\\
 		Spear & 10 s & 2/1 & N & - & - & -/- & Rending, Reach/- \\
-		Pike & 25 s & 2 & N & - & - & +1 & Rending, Reach\\
+%		Pike & 25 s & 2 & N & - & - & +1 & Rending, Reach\\
 		Glaive & 40 s & 2 & N & - & - & +1 & Reach \\
 		Halberd & 1 g 50 s & 2 & N & - & - & - & Multi-edged, Reach\\
 		Lucerne Hammer & 1 g & 2 & N & - & - & - & Multi-edged, Reach\\ 
 		Ranseur & 40 s & 2 & N & - & - & - & Rending, Disarm \\ 
-		Partisan & 40 s & 2 & N & - & - & - & Rending, +1 Deflect\\
+		Partisan & 40 s & 2 & N & - & +1 & - & Rending\\
         Pole-axe & 1 g & 2 & N & - & - & - & Multi-edged \\
 		Lance & 1 g & 2 & N & - & - & - & Rending, Reach\\
 		\hline
@@ -89,7 +89,7 @@
 		\hline
 		\textbf{Black Powder} & & & & & & & Powder-Shot \\
 		\hline
-		Pistol & 1 g 50 s & 1 & 1 & 3 & C & - & Pen 2 \\
+		Pistol & 1 g 50 s & 1 & 1 & 2 & N & - & Pen 2, MD \\
 		Musket & 4 g & 2 & 3 & 3 & C & - & Pen 3 \\
 		Blunderbuss & 3 g & 2 & 1 & 3 & N & - & Burst 1, Cone\\
 		Bomb & 20 s & 1 & 1 & - & C & +1 & Burst 1, Throw, Radius \\
@@ -190,7 +190,7 @@ Shields add a + 2 bonus to the bearer's \textlf{Deflect} score.
 
 
 \section{Weapon Enhancements}
-A weapon may have one quality enhancement and only two other enhancements. However, weapons cannot have more than one that is labelled `Exclusive'.
+A weapon may have one quality enhancement and one other enhancements. However, weapons cannot have more than one that is labelled `Exclusive'.
 
 %\subsection{Crank and Magazine}
 %(Crossbow only - Exclusive) The weapon is fitted with a complex mechanical crank and ammunition store, allowing for rapid firing. This allows crossbows with a \textlf{Reload} rule to fire twice before having to reload. Other crossbows may gain \textlf{Burst} + 1 when firing at the cost of a \textlf{Reload} 1 action next turn. Cost: 8 g.
@@ -202,40 +202,18 @@ A weapon may have one quality enhancement and only two other enhancements. Howev
 (Quality enhancement) This grants the item + 1 \textlf{Power} and \textlf{aim}. This quadruples the cost of the item.
 
 \subsection{Expanded Bolt Rack}
-(Crossbow only - Exclusive) The weapon is fitted with expanded armatures and space for two bolts. It can thus fire two bolts with a single trigger release. This grants \textlf{Burst} + 1 on attacks made with the crossbow. Cost: Base cost x 3 + 1 g. 
+(Crossbow only) The weapon is fitted with expanded armatures and space for two bolts. It can thus fire two bolts with a single trigger release. This grants \textlf{Burst} + 1 on attacks made with the crossbow. Cost: Base cost x 3 + 1 g. 
 
 \subsection{Special Payload}
-(Crossbow only - Exclusive) The armatures and bolt track of the bow are modified to carry larger and heavier bolts. This configures the crossbow to fire specialised ammunition that can carry explosives (bomb from alchemy - Section~\ref{sec:alch}), chains/ropes/nets, or poisons and other chemicals that spray in a radius of 0 around the impact point. Cost: 5 g.
+(Crossbow only) The armatures and bolt track of the bow are modified to carry larger and heavier bolts. This configures the crossbow to fire specialised ammunition that can carry explosives (bomb from alchemy - Section~\ref{sec:alch}), chains/ropes/nets, or poisons and other chemicals that spray in a radius of 0 around the impact point. Cost: 5 g.
 
 \subsection{Experimental Breach}
-(Black Powder Weapons only - Exclusive) The weapon can be loaded through a opening in the barrel, rather than down the muzzle. This reduces the \textlf{Reload} time of the weapon by one rank (reduce paired pistols to \textlf{Reload} 1). However, if the user scores a \textlf{Critical Failure} with the weapon roll 3d6 in addition to normal \textlf{Black Powder} effects. On a score of $8-$ the weapon needs 50 s worth of repairs before it works again, on $9+$ it jams requiring 2 action points be spent to clear the jam. Cost: 10 g.
+(Black Powder Weapons only) The weapon can be loaded through a opening in the barrel, rather than down the muzzle. This reduces the \textlf{Reload} time of the weapon by one rank (reduce paired pistols to \textlf{Reload} 1). However, if the user scores a \textlf{Critical Failure} with the weapon roll 3d6 in addition to normal \textlf{Black Powder} effects. On a score of $8-$ the weapon needs 50 s worth of repairs before it works again, on $9+$ it jams requiring 2 action points be spent to clear the jam. Cost: 10 g.
 
 \subsection{Extra Barrel}
-(Black Powder Weapons only - Exclusive) The weapon is fitted with an extra barrel. The barrels can be fired together adding an \textlf{edge} bonus to damage rolls, or separately, in which case the gun may be fired twice before re-loading. Cost: 3 g.
+(Black Powder Weapons only) The weapon is fitted with an extra barrel. The barrels can be fired together adding an \textlf{edge} bonus to damage rolls, or separately, in which case the gun may be fired twice before re-loading. Cost: 3 g.
 
-\subsection{Carving}
-The weapon is weighted and broadened. This causes it to inflict damage over a wider area, granting it \textlf{Burst} + 1. Cost: 8 g. 
 
-\subsection{Butchering}
-This adds \textlf{Cleave} + 1 to the weapon. Cost: 15 g.
-
-\subsection{Crushing}
-The weapon is designed to pact a hefty blunt wallop. This adds an extra instance of the \textlf{Stagger} effect to any target damaged by the weapon. Cost: 8 g.
-
-\subsection{Thunderous}
-\textlf{Critical Hits} from this weapon knock the victim down. Cost: 15 g.
-
-\subsection{Serrated}
-Serrations on the weapon leave bleeding wounds on the target. Victims of this weapon suffer \textlf{Bleeding} when it causes damage to them. Cost: 8 g.
-
-\subsection{Barbed}
-Savagely curved barbs ensure that existing wounds are torn wider. \textlf{Bleeding} targets are \textlf{Vulnerable} for 1 round if damaged by the weapon. Cost: 15 g.
-
-\subsection{Impaling}
-Carefully designed tapering allows well-placed strikes to plunge deep into the victim's body. Grants \textlf{Rending} to the weapon's attacks. Cost: 8 g.
-
-\subsection{Eviscerating}
-Victims of \textlf{Penetrating Hits} are \textlf{Vulnerable} for 1 round. Cost: 15 g.
 
 
 \section{Armour Enhancements}
