@@ -1,94 +1,98 @@
 \chapter{Arms and Armour}
 \label{chap:arms}
 
-\begin{table}[!ht]
-	\flushleft
-	\caption{Basic Weapons}
-		\label{tab:weps}
-	\begin{tabular}{|l|l|l|l|l|l|}
+\begin{table}[ht!]
+	\centering
+	\caption{Close-combat Weapons. Note that L signifies \textlf{lethality}, A is \textlf{aim}, D is \textlf{deflect}, and P is \textlf{power}. Pen indicates the \textlf{penetration} effect and MD is \textlf{massive damage}.}
+	\label{tab:weps}
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
 		\hline
-		Name & Cost & Hands & Lethality  & Power & Special\\ [0.5ex]
+		Name & Cost & Hands & L & A & D & P & Special\\ [0.5ex]
 		\hline 
-		\textbf{Bladed Weapons} & & & & & \\
+		\textbf{Daggers} & & & & & & & \\
 		\hline
-		Dagger & 5 s & 1 & N & - & Small, Throw 1\\
-		Stiletto & 10 s & 1 & N & - & Small, Rending \\
-		Arming Sword & 20 s & 1 & N & - & +1 Deflect\\
-		Long Sword & 60 s & 2/1 & N & + 1/- & +1 Deflect\\
-		Falchion & 50 s & 1 & N & - & MD \\ 
-		Rapier & 50 s & 1 & N & - & Rending \\ 
-		Sword-breaker & 10 s & 1 & N & - & Disarm,+1 Deflect \\
-		Greatsword & 75 s & 2 & N & + 1 & GW, +1 Deflect\\
-		Zweihander & 2 g & 2 & C & + 1 & GW, Cumbersome\\ 
+		Dagger & 5 s & 1 & N & - & - & - & Small, Throw 1\\
+		Stiletto & 10 s & 1 & N & - & - & - & Small, Rending \\
 		\hline 
-		\textbf{Axes} & & & & & +1 Aim\\
+		\textbf{Swords} & & & & & & & \\
 		\hline
-		Battle Axe & 25 s & 1 & N & - & - \\
-		Bearded Axe & 40 s & 1 & N & - & Disarm \\
-		Throwing Axe & 10 s & 1 & N & - & Throw 2 \\
-		Great Axe & 70 s & 2 & N & +1 & GW \\
-		Long Axe & 70 s & 2 & N & - & GW, Reach \\
-		Bearded Long Axe & 90 s & 2 & N & - & GW, Disarm, Reach \\
+		Arming Sword & 20 s & 1 & N & - & +1 & - & \\
+		Long Sword & 60 s & 2/1 & N & - & +1 & +1/- & \\
+		Falchion & 50 s & 1 & N & - & - & +1 & - \\ 
+		Rapier & 50 s & 1 & N & - & +1 & - & Rending \\ 
+		Sword-breaker & 10 s & 1 & N & - & +1 & - & Disarm\\
+		Greatsword & 75 s & 2 & N & - & +1 & - & MD\\
+		Zweihander & 2 g & 2 & C & - & - & +1 & Cumbersome\\ 
+		\hline 
+		\textbf{Axes} & & & & & & & \\
 		\hline
-		\textbf{Pole Weapons} & & & & & Trip \\
+		Battle Axe & 25 s & 1 & N & +1 & - & - & - \\
+		Bearded Axe & 40 s & 1 & N & +1 & - & - & Disarm \\
+		Throwing Axe & 10 s & 1 & N & +1 & - & - & Throw 2 \\
+		Great Axe & 70 s & 2 & N & +1 & - & - & MD \\
+		Long Axe & 70 s & 2 & N & +1 & - & - & MD, Reach \\
+		Bearded Long Axe & 90 s & 2 & N & +1 & - & - & MD, Disarm, Reach \\
 		\hline
-		Javelin & 5 s & 1 & N & - & Rending, Throw 2\\
-		Quarter Staff & 10 c & 2 &  N & - & Disarm,Reach\\
-		Spear & 10 s & 2/1 & N & -/- & Rending, Reach/- \\
-		Pike & 25 s & 2 & N & +1 & Rending, Reach\\
-		Glaive & 40 s & 2 & N & +1 & Reach \\
-		Halberd & 1 g 50 s & 2 & N & +1 & Multi-edged, Reach\\
-		Lucerne Hammer & 1 g & 2 & N & +1 & Multi-edged, Reach\\ 
-		Ranseur & 40 s & 2 & N & - & Rending, Disarm \\ 
-		Partisan & 40 s & 2 & N & - & Rending, +1 Deflect\\
-        Pole-axe & 1 g & 2 & N & +1 & Multi-edged \\
-		Lance & 1 g & 2 & N & - & Rending,charge MD, Reach\\
+		\textbf{Pole Weapons} & & & & & & & Trip \\
 		\hline
-		\textbf{Blunt Weapons} & & & & & \\
+		Javelin & 5 s & 1 & N & - & - & - & Rending, Throw 2\\
+		Quarter Staff & 10 c & 2 &  N & - & - & - & Disarm,Reach\\
+		Spear & 10 s & 2/1 & N & - & - & -/- & Rending, Reach/- \\
+%		Pike & 25 s & 2 & N & - & - & +1 & Rending, Reach\\
+		Glaive & 40 s & 2 & N & - & - & +1 & Reach \\
+		Halberd & 1 g 50 s & 2 & N & - & - & - & Multi-edged, Reach\\
+		Lucerne Hammer & 1 g & 2 & N & - & - & - & Multi-edged, Reach\\ 
+		Ranseur & 40 s & 2 & N & - & - & - & Rending, Disarm \\ 
+		Partisan & 40 s & 2 & N & - & +1 & - & Rending\\
+        Pole-axe & 1 g & 2 & N & - & - & - & Multi-edged \\
+		Lance & 1 g & 2 & N & - & - & - & Rending, Reach\\
 		\hline
-		Cudgel & 20 c & 1  & N & - & - \\
-		Club & 2 s & 2 & N & +1 & Penetration 1 \\
-		War Hammer & 40 s & 1 & N & - & Penetration 2 \\ 
-		Great Hammer & 60 s & 2 & N & - & Penetration 2, GW \\
-		Maul & 70 s & 2 & C & +1 & Cumbersome, Penetration 1 \\
-		Mace & 5 s & 1 & N & - & Penetration 1 \\
+		\textbf{Blunt Weapons} & & & & & & & \\
 		\hline
-		\textbf{Extended Weapons} & & & & & \\
+		Cudgel & 20 c & 1  & N & - & - & - &  \\
+		Club & 2 s & 2 & N & - & - & +1 & Pen 1 \\
+		War Hammer & 40 s & 1 & N & - & - & - & Pen 2 \\ 
+		Great Hammer & 60 s & 2 & N & - & - & - & Pen 2, MD \\
+		Maul & 70 s & 2 & C & - & - & - & Cumbersome, Pen 1 \\
+		Mace & 5 s & 1 & N & - & - & - & Pen 1 \\
 		\hline
-		Flail & 50 s & 1 & N & +1 & Flail Fail \\ 
-		Grand Flail & 1 g & 2 & N & +2 & Flail Fail, Trip, Reach \\
-		Whip & 15 s & 1 & N & -1 & Trip, Disarm, Range 1\\
-		Chain & 25 s & 2 & N & - & Trip, Disarm, Reach\\  
+		\textbf{Extended Weapons} & & & & & & & \\
+		\hline
+		Flail & 50 s & 1 & N & - & - & +1 & Flail Fail \\ 
+		Grand Flail & 1 g & 2 & N & - & - & +2 & Flail Fail, Trip, Reach \\
+		Whip & 5 s & 1 & N & - & - & -1 & Trip, Disarm, Range 1\\
+		Chain & 25 s & 2 & N & - & - & - & Trip, Disarm, Reach\\  
 %		Garotte Wire & 50 s & 2 & C & - & Sneak Attack only\\
 		\hline
 	\end{tabular}
 \end{table}
 \begin{table}[ht!]
-\caption{Ranged Weapons}
-\begin{tabular}{|l|l|l|l|l|l|l|l|}
-\hline
-Name & Cost & Hands & Range & Reload & Lethality & Power & Special\\ [0.5ex]
-\hline
-\textbf{Bows} & & & & & & & \\
-\hline
-%Hunting Bow & 5 s & 2 & 2 & 1 & N & +1 & - \\
-Short Bow & 20 s & 2 & 1 & - & N & - & -\\
-Long Bow & 40 s & 2 & 3 & 1 & N & +1 & MD \\
-Recurve Bow & 2 g & 2 & 2 & - & N & + 1 & -\\
-\hline
-\textbf{Cross Bows} & & & &  & &  & \\
-\hline
-Hand Crossbow & 80 s & 1 & 1 & - & N & - & Reload 1(Pair), Small \\ 
-Light Crossbow &  80 s & 2 & 2 & 2 & N & +1 & MD\\
-Repeater Crossbow & 1 g & 2 & 1 & 1 & N & - & - \\  
-Heavy Crossbow & 5 g & 2 & 3 & 3 & C & +1 & MD \\
-\hline
-\textbf{Black Powder} & & & & & & & Powder-Shot \\
-\hline
-Pistol & 1 g 50 s & 1 & 1 & 3 & C & - & Penetration 2 \\
-Musket & 4 g & 2 & 3 & 3 & C & - & Penetration 3 \\
-Blunderbuss & 3 g & 2 & 1 & 3 & N & - & Burst 1, Cone\\
-Bomb & 20 s & 1 & 1 & - & C & +1 & Burst 1, Throw, Radius \\
+	\centering
+	\caption{Ranged Weapons. Note that L signifies \textlf{lethality} and P is \textlf{power}. Pen indicates the \textlf{penetration} effect and MD is \textlf{massive damage}.}
+	\begin{tabular}{|l|l|l|l|l|l|l|l|}
+		\hline
+		Name & Cost & Hands & Range & Reload & L & P & Special\\ [0.5ex]
+		\hline
+		\textbf{Bows} & & & & & & & \\
+		\hline
+		%Hunting Bow & 5 s & 2 & 2 & 1 & N & +1 & - \\
+		Short Bow & 20 s & 2 & 1 & - & N & - & -\\
+		Long Bow & 60 s & 2 & 3 & 1 & N & - & MD \\
+		Recurve Bow & 1 g & 2 & 2 & - & N & + 1 & -\\
+		\hline
+		\textbf{Cross Bows} & & & &  & &  & \\
+		\hline
+		Hand Crossbow & 50 s & 1 & 1 & - & N & - & Small \\ 
+		Light Crossbow &  50 s & 2 & 2 & 2 & N & +1 & MD\\
+		Repeater Crossbow & 70 s & 2 & 1 & 1 & N & - & - \\  
+		Heavy Crossbow & 3 g & 2 & 3 & 3 & C & +1 & MD \\
+		\hline
+		\textbf{Black Powder} & & & & & & & Powder-Shot \\
+		\hline
+		Pistol & 1 g & 1 & 1 & 1 & N & - & Pen 1, MD \\
+		Musket & 3 g & 2 & 3 & 2 & N & - & Pen 2, MD \\
+		Blunderbuss & 2 g & 2 & 1 & 2 & N & - & Burst 1, Cone, MD\\
+		Bomb & 50 s & 1 & 1 & - & N & - & Burst 1, Throw, Radius 0, MD \\
 		\hline 
 	\end{tabular}
 	\label{tab:range-weps}    
@@ -113,9 +117,9 @@ Bomb & 20 s & 1 & 1 & - & C & +1 & Burst 1, Throw, Radius \\
 		Heavy Armour & & &  \\
 		\hline
 		Brigandine and plate & 6 g & H & +5 \\
-		Full Plate  & 12 g & H & +6  \\
+		Full Plate  & 10 g & H & +6  \\
 		\hline
-		Barding (Horse)& 8 g & H & +4 \\
+		Barding (Horse)& 6 g & H & +4 \\
 		\hline
 	\end{tabular}
 	\caption{Shields}
@@ -123,7 +127,7 @@ Bomb & 20 s & 1 & 1 & - & C & +1 & Burst 1, Throw, Radius \\
 		\hline
 		Name & Cost & Deflect & Special\\   
 		\hline
-		Shield & 50 s & +2 & - \\
+		Shield & 30 s & +2 & - \\
 %		Round Shield & 50 s & +2 & - \\
 %		Tower Shield & 2 g & +3 & Adamant, Cumbersome \\
 		\hline
@@ -136,32 +140,29 @@ Bomb & 20 s & 1 & 1 & - & C & +1 & Burst 1, Throw, Radius \\
 
 \section{Weapon Special Rules}
 
-\subsection{Throw}
-Weapons with the \textlf{Throw} rule are finely balanced for use as projectiles. Thus, weapons without this rule confer an \textlf{edge} penalty to \textlf{Aim}.
-
 \subsection{Multi-Edged}
-A weapon like this has many different naughty ends. Which bit is being used must be decided before rolling each attack. A halberd can \textlf{trip} with its hook, slash with the axe-blade (+ 1 \textlf{Aim}) or stab with the spear point (\textlf{Rending}). The Lucerne Hammer is similar but it has \textlf{Penetration} 2 when the hammer head is used. A pole-axe has a heavy axe blade with \textlf{massive damage}, a hammer-head with \textlf{penetration} 2, and a spear tip with \textlf{rending}.
-
-\subsection{Unarmed}
-Weapons with this rule allow the wielder to retain the benefit of \textlf{perks} that require him to be unarmed.
+A weapon like this has many different naughty ends. Which bit is being used must be decided before rolling each attack. A halberd can \textlf{trip} with its hook, slash with the axe-blade (+ 1 \textlf{Power}) or stab with the spear point (\textlf{Rending}). The Lucerne Hammer is similar but it has \textlf{Penetration} 2 when the hammer head is used. A pole-axe has a heavy axe blade with \textlf{massive damage}, a hammer-head with \textlf{penetration} 2, and a spear tip with \textlf{rending}.
 
 \subsection{Flail}
-A flail is a one-handed weapon consisting of a short handle attached to a heavy mace head on the end of a chain. The extension of the chain grants the weapon great power for a single-handed weapon. However, the chain can get tangled or caught on an opponent. Thus, any \textlf{Critical success} \textlf{Deflects} by targets result in the wielder being forced to untangle the flail before it can be used to attack, which results in an additional \textlf{Moment of Weakness}. 
+A flail is a one-handed weapon consisting of a short handle attached to a heavy mace head on the end of a chain. The extension of the chain grants the weapon great power for a single-handed weapon. However, the chain can get tangled or caught on an opponent. Thus, any \textlf{Critical success} \textlf{Deflects} by targets result in the wielder being forced to untangle the flail before it can be used to attack, which results in a \textlf{Moment of Weakness}. 
+
+\subsection{Lance}
+A lance gains bonus \textlf{lethality} during a mounted charge action.
 
 \subsection{Bows}
-Bows are Shooting type weapons, an untrained character firing a bow is subject to an \textlf{edge} penalty on \textlf{Aim} (the Archer perk can negate this). Firing two arrows together incurs an \textlf{edge} penalty to \textlf{Aim} but adds an extra projectile to the shot.
+Bows are shooting-type weapons. Firing two arrows together incurs an \textlf{edge} penalty to \textlf{Aim} but adds an extra projectile to the shot.
 
 %\subsubsection{Long Bows}
 %These huge bows are difficult to draw, requiring a mighty arm to get the best results. These cannot be used without a positive-definite \textlf{Might} score ($>0$).
 
 \subsection{Crossbows}
-All crossbows are shooting weapons. There is no untrained penalty for these weapons, due to their point-and-shoot nature. Unless specially modified, these cannot fire two bolts at once.
+All crossbows are shooting weapons. Unless specially modified, these cannot fire two bolts at once.
 
 \subsubsection{Hand Crossbow}
 These diminutive weapons are designed to be easily concealed and to unloaded at close range into an unsuspecting victim. As such, they are \textlf{small} and fast firing but are still tricky to reload when used in pairs (requiring a 1 action \textlf{Reload}).
 
 \subsection{Powder-Shot}
-Black powder weapons are powerful but woefully inaccurate, to represent this, they suffer an \textlf{edge} penalty to \textlf{Aim} (this does not apply to area weapons like bombs). Additionally their \textlf{Critical Failures} cause the user a single damage roll (use \textlf{power} +3 and \textlf{lethality} N). In the case of the bomb, treat it as though it hit everyone inside the same area as the character (including themselves) and resolve hits as normal.
+Black powder weapons are powerful but quite dangerous to their wielder. As such, scoring a raw $5-$ on \textlf{aim} means the weapons firing goes dangerously awry. This causes the user a single damage roll (use \textlf{power} +2 and \textlf{lethality} N). In the case of the bomb, treat it as though it hit everyone inside the same area as the character (including themselves) and resolve hits as normal.
 
 \subsubsection{Blunderbuss}
 This weapon fires a scatter of shot in a cone, hitting up to 2 targets in a single combat area. The user can also declare using it point blank within range 0, then it hits one target only but has \textlf{Burst} +1.
@@ -189,52 +190,30 @@ Shields add a + 2 bonus to the bearer's \textlf{Deflect} score.
 
 
 \section{Weapon Enhancements}
-A weapon may have one quality enhancement and only two other enhancements. However, weapons cannot have more than one that is labelled 'Exclusive'.
+A weapon may have one quality enhancement and one other enhancements. However, weapons cannot have more than one that is labelled `Exclusive'.
 
 %\subsection{Crank and Magazine}
 %(Crossbow only - Exclusive) The weapon is fitted with a complex mechanical crank and ammunition store, allowing for rapid firing. This allows crossbows with a \textlf{Reload} rule to fire twice before having to reload. Other crossbows may gain \textlf{Burst} + 1 when firing at the cost of a \textlf{Reload} 1 action next turn. Cost: 8 g.
 
 \subsection{Fine}
-(Quality enhancement) This grants the item + 1 power. This doubles the cost of the item. 
+(Quality enhancement) This grants the item + 1 \textlf{power}. This doubles the cost of the item. 
 
 \subsection{Masterly}
-(Quality enhancement) This grants the item + 2 Power. This quadruples the cost of the item.
+(Quality enhancement) This grants the item + 1 \textlf{Power} and \textlf{aim}. This quadruples the cost of the item.
 
 \subsection{Expanded Bolt Rack}
-(Crossbow only - Exclusive) The weapon is fitted with expanded armatures and space for two bolts. It can thus fire two bolts with a single trigger release. This grants \textlf{Burst} + 1 on attacks made with the crossbow. Cost: Base cost x 3 + 1 g. 
+(Crossbow only) The weapon is fitted with expanded armatures and space for two bolts. It can thus fire two bolts with a single trigger release. This grants \textlf{Burst} + 1 on attacks made with the crossbow. Cost: Base cost x 3 + 1 g. 
 
 \subsection{Special Payload}
-(Crossbow only - Exclusive) The armatures and bolt track of the bow are modified to carry larger and heavier bolts. This configures the crossbow to fire specialised ammunition that can carry explosives (bomb from alchemy - Section~\ref{sec:alch}), chains/ropes/nets, or poisons and other chemicals that spray in a radius of 1 around the impact point. Cost: 5 g.
+(Crossbow only) The armatures and bolt track of the bow are modified to carry larger and heavier bolts. This configures the crossbow to fire specialised ammunition that can carry explosives (bomb from alchemy - Section~\ref{sec:alch}), chains/ropes/nets, or poisons and other chemicals that spray in a radius of 0 around the impact point. Cost: 5 g.
 
 \subsection{Experimental Breach}
-(Black Powder Weapons only - Exclusive) The weapon can be loaded through a opening in the breach, rather than down the muzzle. This reduces the \textlf{Reload} time of the weapon by one rank (reduce paired pistols to \textlf{Reload} 1). However, if the user scores a \textlf{Critical Failure} with the weapon roll 3d6 in addition to normal \textlf{Black Powder} effects. On a score of $8-$ the weapon needs 50 s worth of repairs before it works again, on $9+$ it jams requiring 2 action points be spent to clear the jam. Cost: 10 g.
+(Black Powder Weapons only) The weapon can be loaded through a opening in the barrel, rather than down the muzzle. This reduces the \textlf{Reload} time of the weapon by one rank (reduce paired pistols to \textlf{Reload} 1). However, if the user scores a \textlf{Critical Failure} with the weapon roll 3d6 in addition to normal \textlf{Black Powder} effects. On a score of $8-$ the weapon needs 50 s worth of repairs before it works again, on $9+$ it jams requiring 2 action points be spent to clear the jam. Cost: 10 g.
 
 \subsection{Extra Barrel}
-(Black Powder Weapons only - Exclusive) The weapon is fitted with an extra barrel. The barrels can be fired together adding an \textlf{edge} bonus to damage rolls, or separately, in which case the gun may be fired twice before re-loading. Cost: 3 g.
+(Black Powder Weapons only) The weapon is fitted with an extra barrel. The barrels can be fired together adding an \textlf{edge} bonus to damage rolls, or separately, in which case the gun may be fired twice before re-loading. Cost: 3 g.
 
-\subsection{Carving}
-The weapon is weighted and broadened. This causes it to inflict damage over a wider area, granting it \textlf{Burst} + 1. Cost: 8 g. 
 
-\subsection{Butchering}
-This adds \textlf{Cleave} + 1 to the weapon. Cost: 15 g.
-
-\subsection{Crushing}
-The weapon is designed to pact a hefty blunt wallop. This adds an extra instance of the \textlf{Stagger} effect to any target wounded by the weapon. Cost: 8 g.
-
-\subsection{Thunderous}
-\textlf{Critical Hits} from this weapon knock the victim down. Cost: 15 g.
-
-\subsection{Serrated}
-Serrations on the weapon leave bleeding wounds on the target. Victims of this weapon suffer \textlf{Bleeding} when it causes damage to them. Cost: 8 g.
-
-\subsection{Barbed}
-Savagely curved barbs ensure that existing wounds are torn wider. \textlf{Bleeding} targets are \textlf{Vulnerable} for 1 round if damaged by the weapon. Cost: 15 g.
-
-\subsection{Impaling}
-Carefully designed tapering allows well-placed strikes to plunge deep into the victim's body. Grants \textlf{Rending} to the weapon's attacks. Cost: 8 g.
-
-\subsection{Eviscerating}
-Victims of \textlf{Penetrating Hits} are \textlf{Vulnerable} for 1 round. Cost: 15 g.
 
 
 \section{Armour Enhancements}
