@@ -60,7 +60,7 @@
 		\hline
 		Flail & 50 s & 1 & N & - & - & +1 & Flail Fail \\ 
 		Grand Flail & 1 g & 2 & N & - & - & +2 & Flail Fail, Trip, Reach \\
-		Whip & 15 s & 1 & N & - & - & -1 & Trip, Disarm, Range 1\\
+		Whip & 5 s & 1 & N & - & - & -1 & Trip, Disarm, Range 1\\
 		Chain & 25 s & 2 & N & - & - & - & Trip, Disarm, Reach\\  
 %		Garotte Wire & 50 s & 2 & C & - & Sneak Attack only\\
 		\hline
@@ -77,22 +77,22 @@
 		\hline
 		%Hunting Bow & 5 s & 2 & 2 & 1 & N & +1 & - \\
 		Short Bow & 20 s & 2 & 1 & - & N & - & -\\
-		Long Bow & 40 s & 2 & 3 & 1 & N & - & MD \\
-		Recurve Bow & 2 g & 2 & 2 & - & N & + 1 & -\\
+		Long Bow & 60 s & 2 & 3 & 1 & N & - & MD \\
+		Recurve Bow & 1 g & 2 & 2 & - & N & + 1 & -\\
 		\hline
 		\textbf{Cross Bows} & & & &  & &  & \\
 		\hline
-		Hand Crossbow & 80 s & 1 & 1 & - & N & - & Small \\ 
-		Light Crossbow &  80 s & 2 & 2 & 2 & N & +1 & MD\\
-		Repeater Crossbow & 1 g & 2 & 1 & 1 & N & - & - \\  
-		Heavy Crossbow & 5 g & 2 & 3 & 3 & C & +1 & MD \\
+		Hand Crossbow & 50 s & 1 & 1 & - & N & - & Small \\ 
+		Light Crossbow &  50 s & 2 & 2 & 2 & N & +1 & MD\\
+		Repeater Crossbow & 70 s & 2 & 1 & 1 & N & - & - \\  
+		Heavy Crossbow & 3 g & 2 & 3 & 3 & C & +1 & MD \\
 		\hline
 		\textbf{Black Powder} & & & & & & & Powder-Shot \\
 		\hline
-		Pistol & 1 g 50 s & 1 & 1 & 2 & N & - & Pen 2, MD \\
-		Musket & 4 g & 2 & 3 & 3 & C & - & Pen 3 \\
-		Blunderbuss & 3 g & 2 & 1 & 3 & N & - & Burst 1, Cone\\
-		Bomb & 20 s & 1 & 1 & - & C & +1 & Burst 1, Throw, Radius \\
+		Pistol & 1 g & 1 & 1 & 1 & N & - & Pen 1, MD \\
+		Musket & 3 g & 2 & 3 & 2 & N & - & Pen 2, MD \\
+		Blunderbuss & 2 g & 2 & 1 & 2 & N & - & Burst 1, Cone, MD\\
+		Bomb & 50 s & 1 & 1 & - & N & - & Burst 1, Throw, Radius 0, MD \\
 		\hline 
 	\end{tabular}
 	\label{tab:range-weps}    
@@ -117,9 +117,9 @@
 		Heavy Armour & & &  \\
 		\hline
 		Brigandine and plate & 6 g & H & +5 \\
-		Full Plate  & 12 g & H & +6  \\
+		Full Plate  & 10 g & H & +6  \\
 		\hline
-		Barding (Horse)& 8 g & H & +4 \\
+		Barding (Horse)& 6 g & H & +4 \\
 		\hline
 	\end{tabular}
 	\caption{Shields}
@@ -127,7 +127,7 @@
 		\hline
 		Name & Cost & Deflect & Special\\   
 		\hline
-		Shield & 50 s & +2 & - \\
+		Shield & 30 s & +2 & - \\
 %		Round Shield & 50 s & +2 & - \\
 %		Tower Shield & 2 g & +3 & Adamant, Cumbersome \\
 		\hline
@@ -144,7 +144,7 @@
 A weapon like this has many different naughty ends. Which bit is being used must be decided before rolling each attack. A halberd can \textlf{trip} with its hook, slash with the axe-blade (+ 1 \textlf{Power}) or stab with the spear point (\textlf{Rending}). The Lucerne Hammer is similar but it has \textlf{Penetration} 2 when the hammer head is used. A pole-axe has a heavy axe blade with \textlf{massive damage}, a hammer-head with \textlf{penetration} 2, and a spear tip with \textlf{rending}.
 
 \subsection{Flail}
-A flail is a one-handed weapon consisting of a short handle attached to a heavy mace head on the end of a chain. The extension of the chain grants the weapon great power for a single-handed weapon. However, the chain can get tangled or caught on an opponent. Thus, any \textlf{Critical success} \textlf{Deflects} by targets result in the wielder being forced to untangle the flail before it can be used to attack, which results in an additional \textlf{Moment of Weakness}. 
+A flail is a one-handed weapon consisting of a short handle attached to a heavy mace head on the end of a chain. The extension of the chain grants the weapon great power for a single-handed weapon. However, the chain can get tangled or caught on an opponent. Thus, any \textlf{Critical success} \textlf{Deflects} by targets result in the wielder being forced to untangle the flail before it can be used to attack, which results in a \textlf{Moment of Weakness}. 
 
 \subsection{Lance}
 A lance gains bonus \textlf{lethality} during a mounted charge action.
@@ -162,7 +162,7 @@ All crossbows are shooting weapons. Unless specially modified, these cannot fire
 These diminutive weapons are designed to be easily concealed and to unloaded at close range into an unsuspecting victim. As such, they are \textlf{small} and fast firing but are still tricky to reload when used in pairs (requiring a 1 action \textlf{Reload}).
 
 \subsection{Powder-Shot}
-Black powder weapons are powerful but quite dangerous to their wielder. As such, \textlf{Critical Failures} on \textlf{aim} cause the user a single damage roll (use \textlf{power} +2 and \textlf{lethality} N). In the case of the bomb, treat it as though it hit everyone inside the same area as the character (including themselves) and resolve hits as normal.
+Black powder weapons are powerful but quite dangerous to their wielder. As such, scoring a raw $5-$ on \textlf{aim} means the weapons firing goes dangerously awry. This causes the user a single damage roll (use \textlf{power} +2 and \textlf{lethality} N). In the case of the bomb, treat it as though it hit everyone inside the same area as the character (including themselves) and resolve hits as normal.
 
 \subsubsection{Blunderbuss}
 This weapon fires a scatter of shot in a cone, hitting up to 2 targets in a single combat area. The user can also declare using it point blank within range 0, then it hits one target only but has \textlf{Burst} +1.
