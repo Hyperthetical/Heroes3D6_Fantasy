@@ -215,7 +215,7 @@ A new character may choose one piece of armour and up to three weapons from Tabl
 The character has spent time studying aether and its powers under the auspices of synod in Stormheight. Associated skills: Aethermancy, Mechanical, Aethertech, Infusary, History, Religion, Plants, Animals.
 
 \subsection{Savant}
-The character has learned the mysteries of aethermancy on their own. Such individuals often hide their talents from the synod for fear of being forced into conformity or having to leave their home village. Associated skills: Aethermancy, Infusary, Aethertech, Survival, Persuade, Decieve. 
+The character has learned some of the mysteries of aether on their own. Such individuals often hide their talents from the synod for fear of being forced into conformity or having to leave their home village. Associated skills: Aethermancy, Infusary, Aethertech, Survival, Persuade, Decieve. 
 
 \subsection{Exile}
 The character has been exiled by the synod for repeated defiance of the Harmony's dictates. They now skulk on the margins of society, keeping away from the eyes of law enforcement in the far-flung rural districts of highlands. Some such individuals find sanctuary among the Mus-folk, who have little regard for the Harmony or synod, others turn to less than legal ways of making a living in the aethertech black-market. Associated skills: Stealth, Disguise, Deceive, Survival, Slight of hand, Aethertech, Awareness.   
@@ -223,7 +223,6 @@ The character has been exiled by the synod for repeated defiance of the Harmony'
 
 \section{Additional convictions}
 
-%Religious conviction for the setting
 \subsection{The Harmony of all}
 The character is firmly convinced of the teachings of the Harmony. They live their life in pursuit of harmony within themselves and with society as a whole. They tend to regard the synod and its laws as an essential ingredient in achieving harmony with the natural world.
 
@@ -245,7 +244,7 @@ Aethermancy and aethertech go too far in their rampant consumption of the world'
 These perks do \textbf{not} occupy equipment slots for passive or active \textlf{perk}, their effect is always active.
 
 \subsection{Aetheric learning (3)}
-(Requires \textlf{skill proficiency: aethermancy}) This may only be chosen at character creation. This grants the character an aether capacitor that can hold 1 ether point (see Section~\ref{sec:capacitor}). Additionally, they may choose two aether manifestations from the following list: Aetheric blast~\ref{spell:sorc-blast}, Bend light~\ref{spell:bend-light}, Resonant motion~\ref{spell:min-tele}, Overgrowth~\ref{spell:overgrowth}, Ignite~\ref{spell:ignite}, Illuminate~\ref{spell:illuminate}, Orb of aether~\ref{spell:orb-light}, Aetheric armour~\ref{spell:arcane-armour}, Blinding ray~\ref{spell:blind-ray}, Flare~\ref{spell:flare}, and Stone sense~\ref{spell:stone-sense}.
+(Requires \textlf{skill proficiency: aethermancy}) This may only be chosen at character creation. This grants the character an aether capacitor that can hold 1 aether point (see Section~\ref{sec:capacitor}). Additionally, they may choose two aether manifestations from the following list: Aetheric blast~\ref{spell:sorc-blast}, Bend light~\ref{spell:bend-light}, Resonant motion~\ref{spell:min-tele}, Overgrowth~\ref{spell:overgrowth}, Ignite~\ref{spell:ignite}, Illuminate~\ref{spell:illuminate}, Orb of aether~\ref{spell:orb-light}, Aetheric armour~\ref{spell:arcane-armour}, Blinding ray~\ref{spell:blind-ray}, Flare~\ref{spell:flare}, and Stone sense~\ref{spell:stone-sense}.
 
 \subsection{Weapon proficiency: X (2)}
 In this setting, X can be drawn from: unarmed, swords \& daggers, axes, blunt weapons, pole weapons, extended weapons, bows, crossbows, and black-powder weapons. A character who is not proficient with his equipped weapon counts his \textlf{aim} and \textlf{power} as $\dicenoprof$.
@@ -425,6 +424,7 @@ This can only be used upon a shield, it uses aether ciruits to make the shield r
 
 
 \section{Infusary (Cunning)}
+\label{sec:infuse}
 \textlf{Infusary} is the craft of creating aether-enhanced liquids that can have powerful effects. 
 
 An infusion needs a container to hold it as well as a aether crystals and a signature ingredient to shape the purpose of the aether. To create infusions a character needs set of glass vessels and equipment for measuring, grinding and heating ingredients (infuser's tools) that can be purchased from an aethertech for 50 silver.
@@ -474,12 +474,12 @@ Any character with sufficient knowledge of the flow and hum of the aether can al
 A character's body can only hold so much aether. To transcend this limitation, aethermancers have developed a device called an `aether capacitor' which stores additional aether for them. This device is bulky and has wires running from it various points on the aethermancer's body. This means that one cannot wear armour and have an aether capacitor equipped. A standard aether capacitor costs 1 g and can hold 1 aether point. For each additional capacity point the cost increases by 3 g. The maximum possible capacity is 4 points.  
 
 \subsection{Producing a manifestation}
-Manifestations are actions like any other. However, they also costs 1 point of aether, unless otherwise specified. Manifestations usually just require that the caster and victim make a \textlf{resist} check to decide if they take effect. However, some manifestations produce projectiles and thus also involve a \textlf{deflect} check. A \textlf{critical failure} during casting releases aether in an uncontrolled reaction. 
+Manifestations are actions like any other. However, they also cost 1 point of aether, unless otherwise specified. Manifestations usually just require that the caster and victim make a \textlf{resist} check to decide if they take effect. However, some manifestations produce projectiles and thus also involve a \textlf{deflect} check. A \textlf{critical failure} during casting releases aether in an uncontrolled reaction. 
 
 \subsection{Resist(X)}
-A Resist(X) check involves the victim making an opposed roll with their natural attribute X against the aethermancer, who adds -1 or \textlf{Might} depending on \textlf{magic} skill proficiency. 
+A Resist(X) check involves the victim making an opposed roll with their natural attribute X against the aethermancer, who adds -1 or \textlf{Might} depending on \textlf{aethermancy} skill proficiency. 
 
-\subsection{Dispel}
+\subsection{Disrupt}
 An aethermancer can use their own aether to nullify the manifestations of another. This can be used in place of \textlf{Resist} or as 1 action point prepared action, it involves an \textlf{aethermancy} check opposed with the other aethermancer. If the check succeeds the manifestation is nullified.
 
 \subsection{Persistent manifestations}
@@ -489,18 +489,20 @@ These have a long duration but require that concentration be maintained to keep 
 
 
 
-\section{Aether manifestation}
+\section{Aether manifestations}
 \label{sec:spells}
 
 To represent a character's development in aethermancy they can learn new manifestations by paying the experience point cost listed in square brackets after the name. No manifestations can be learned unless the character has \textlf{Skill proficiency: aethermancy}. All manifestations cost 1 action point unless otherwise specified. \textlf{persistent} manifestations are marked with (P) after their experience cost.
 
 \subsection{Aether siphon [2]}
-An aethermancer can establish a resonance with another creature such that the aether is stripped from their body. For 2 action points (but no aether points) a chosen target within range 0 (5 m) must \textlf{resist(C)} or lose an aether point. If the target has no aether points, it loses an \textlf{endurance} instead. If the aethermancer wins the \textlf{resist} check, they gain 1 aether point.
+An aethermancer can establish a resonance with another creature such that the aether is stripped from their body. For 2 action points (but no aether points) a chosen target within range 0 (5 m) must \textlf{resist(C)} or lose an aether point. If the target has no aether points, it loses an \textlf{endurance} instead. If the aethermancer wins the \textlf{resist} check, they gain 1 aether point, if they fail they suffer a \textlf{moment of weakness}.
+\subsubsection{Voracious siphon [2]}
+The action point cost of \textlf{aether siphon} is reduced to 1.  
 
 
 \subsection{Aetheric blast [2]}
 \label{spell:sorc-blast}
-This costs 1 action point and projects your aether out in a searing jet. A chosen target within range 1 (15 m) must \textlf{deflect}, if they fail then they must \textlf{resist(R)} or suffer damage with normal \textlf{lethality} (\textlf{critical success} for the aethermancer on \textlf{resist} increments damage severity). You have \textlf{Edge} on the \textlf{resist} roll. 
+This costs 1 action point and projects your aether out in a searing jet from each hand. Two chosen targets within range 1 (15 m) must \textlf{resist(C)} or suffer damage with normal \textlf{lethality} (\textlf{critical success} for the aethermancer on \textlf{resist} increments damage severity). You have \textlf{Edge} on the \textlf{resist} roll. 
 \subsubsection{Augment: Resounding blast [2]}
 Aetheric blast now inflicts \textlf{knocked down} if it causes damage.
 
@@ -510,28 +512,29 @@ For 1 action point you manifest a wall of shimmering aether around a radius of 5
 
 
 \subsection{Animal aether [2]}
-Every living creature hums with an aetheric field. By carefully tuning your own aetheric field into resonance you can hear the mood and emotions of animals.
+Every living creature hums with an aetheric field. By carefully tuning your own aetheric field into resonance you can hear the mood and emotions of animals. This lasts for up to 1 hour.
 \subsubsection{Augment: Animal resonance [2]}
-Your mastery of the aetheric fields of animals allows you to communicate emotions to them as well as attempt to \textlf{persuade} them.
+Your mastery of the aetheric fields of animals allows you to communicate emotions to them as well as attempt to \textlf{persuade} them while \textlf{animal aether} is active.
 
 
 \subsection{Animate homunculus [2]}
 You can shape a small creature out of any given material (30 cm is the maximum size), this creature is then imbued with aether. This grants it a kind of limited life while directly controlled by you (this requires your full concentration). The creature will only act when controlled, otherwise it remains inert. A homunculus has no skill proficiencies and cannot inflict damage in combat.
-\subsubsection{Augment: Automaton [4]}
+\subsubsection{Augment: Automaton [3]}
 Your homunculi are always animated and will obey simple verbal commands. You may have 1 + \textlf{Wit} homunculi active at once. 
-\subsubsection{Augment: Golem [5]}
+\subsubsection{Augment: Golem [4]}
 The maximum size, for a single homunculus, is increased to medium (man-sized) creatures, these can wield weapons and make unarmed attacks in combat. 
 
 
 \subsection{Arcing aether [3]}
-You infuse your aether into a resonance with elemental lightning. For 2 action points, aetheric lighting leaps from your body and strikes a target within range 2 (25 m). The target must \textlf{resist(R)} or suffer damage with normal \textlf{lethality}. The lightning then leaps to a second target within range 1 of the first. It will only leap to the aethermancer's allies if no enemies are in range. 
+You mould your aether into a resonance with elemental lightning. For 2 action points, aetheric lighting leaps from your body and strikes a target within range 2 (25 m). The target must \textlf{resist(R)} or suffer damage with normal \textlf{lethality}. The lightning then leaps to a second target within range 1 of the first, and a third within range 1 of the second. It will only leap to the aethermancer's allies if no enemies are in range. 
 \subsubsection{Augment: Resonant arcing [2]}
 The lightning gains an extra leap every time it causes damage.
 \subsubsection{Augment: Paralytic arcs [2]}
 Victims damaged by this manifestation are \textlf{immobilised} for 1 round.
 
+
 \subsection{Befuddle [2]}
-A discordant aether infusion removes your target's ability to distinguish friends from foes. If the target fails a \textlf{resist(W)} check, they regard all creatures as hostile and dangerous. This means they can panic, run away, or lash-out at anything nearby. Choose combat targets and behaviour for the victim randomly. This lasts up to 1 minute. Each round after the first, the victim may re-attempt to \textlf{resist}.
+A discordant aetheric projection removes your target's ability to distinguish friends from foes. If the target fails a \textlf{resist(W)} check, they regard all creatures as hostile and dangerous. This means they can panic, run away, or lash-out at anything nearby. Choose combat targets and behaviour for the victim randomly. This lasts up to 1 minute. Each round after the first, the victim may re-attempt to \textlf{resist}.
 
 
 \subsection{Bend light [3] (P)}
@@ -551,11 +554,17 @@ For 1 action point you blast a 5 m radius (1 combat area) within a range of 1 (1
 
 
 \subsection{Compel [3]}
-You infuse aether into a target by touch, forcing them to make an action chosen by you if they fail a \textlf{Resist(W)} check. This fails if the action would harm the target. This is a \textlf{persistent} effect. Specify one extra action per level of \textlf{critical success} for the aethermancer on \textlf{resist}. The victim is aware that they being forced to act.
+You project aether into a target by touch, forcing them to make an action chosen by you if they fail a \textlf{Resist(W)} check. This fails if the action would harm the target. This is a \textlf{persistent} effect. Specify one extra action per level of \textlf{critical success} for the aethermancer on \textlf{resist}. The victim is aware that they being forced to act.
 \subsubsection{Augment: Dominate [3]}
 Your control is so strong that Compel will not fail if the action would be harmful to the victim itself.
 \subsubsection{Augment: Project aether [2]}
 You can now manifest this power at range 1.
+
+
+\subsection{Concussive wave [2]}
+Your aether blasts out in wave of concussive force. This \textlf{knocks back} all adjacent creatures (size large or smaller) if they fail \textlf{resist (M)}. 
+\subsubsection{Violent concussion [3]}
+Victims \textlf{knocked back} are also \textlf{knocked down}. If they enter difficult terrain or cover as a result of the \textlf{knock back} suffer damage with normal \textlf{lethality}.
 
 
 \subsection{Damping field [2] (P)}
@@ -566,9 +575,15 @@ Damage rolls against you suffer an \textlf{edge} penalty while this manifestatio
 
 
 \subsection{Earthquake [4] (P)}
-You flood the ground with aether, making it roll and buck as though it was alive. For 2 action points you make the ground violently shake. All creatures adjacent to you must \textlf{resist(M)} or be knocked down. This can be maintained as a \textlf{persistent} effect for up to 1 minute. 
+You flood the ground with aether, making it roll and buck as though it was alive. For 2 action points you make the ground violently shake. All creatures adjacent to you must \textlf{resist(M)} or be knocked down. This can be maintained as a \textlf{persistent} effect for up to 1 minute (you are unaffected). 
 \subsubsection{Augment: Project aether [2]}
 You can now manifest this power at range 2 (25 m), instead of shaking the ground adjacent to you.
+
+
+\subsection{Explosive emanation [4]}
+This costs 2 action points. You condense your aether into an explosive eruption that consumes a 6 m radius (1 combat area), within range 2 (25 m), in flames. Creatures in the blast must make a \textlf{resist(C)} check. Failure inflicts damage with normal \textlf{lethality} (\textlf{lethality} scales with levels of \textlf{critical success} for the aethermancer). This manifestation sets all flammable material in the radius on fire.
+\subsubsection{Augment: Blaster Master [3]}
+The fiery explosion burns with voracious intensity. This manifestation gains the \textlf{Burst} +1 effect.
 
 
 \subsection{Eyes of aether [2]}
@@ -576,14 +591,13 @@ You can alter your senses to perceive flows of the aether. This renders you blin
 
 
 \subsection{Fiery surge [3]}
-You can fuel a flame via aether infusion, greatly increase the intensity of an existing fire within range 1 (15 m). Any creature that makes contact with such a flame must \textlf{resist(C)} or suffer damage with crushing \textlf{lethality}. This fire burns for 1 minute.
+You can fuel a flame via aether infusion, greatly increase the intensity of an existing fire within range 1 (15 m). Any creature that makes contact with such a flame (i.e. enters the same combat area) must \textlf{resist(C)} or suffer damage with crushing \textlf{lethality}. This fire burns for 1 minute.
 
 
 \subsection{Fear [2]}
-You infuse a target, within range 1 (15 m), with aether, causing a cloud of fear to pass across the target's mind if they fail a \textlf{resist(R)} check. Such a target cannot approach the aethermancer or remain adjacent to them for 1 minute. Each round after the first the victim may re-attempt the \textlf{resist(R)}. 
+You bombard a target, within range 1 (15 m), with aetheric vibrations, causing a cloud of fear to pass across the target's mind if they fail a \textlf{resist(R)} check. Such a target cannot approach the aethermancer or remain adjacent to them for 1 minute. Each round after the first the victim may re-attempt the \textlf{resist(R)}. 
 \subsubsection{Augment: Terror [3]}
 You have learned to afflict the mind with absolute terror. The target of fear suffers an \textlf{edge} penalty to all rolls while this effect persists. 
-
 
 
 \subsection{Flare [2]}
@@ -593,14 +607,8 @@ Projecting aether suddenly into a flame within range 1 (15 m), you cause it to b
 Flare ignites all adjacent creatures, who suffer damage with normal \textlf{lethality} if they failed \textlf{resist(M)} (\textlf{critical success} for the aethermancer on \textlf{resist} increments damage severity).
 
 
-\subsection{Fireball [4]}
-This costs 2 action points. You condense your aether into an explosive fireball that you can hurl at a 5 m radius (1 combat area) within range 2 (25 m). Creatures within the blast must \textlf{deflect} or make a \textlf{resist(R)} check. Failure on the latter inflicts damage with normal \textlf{lethality} (\textlf{lethality} scales with levels of \textlf{critical success} for the aethermancer). This manifestation sets all flammable material in the radius on fire.
-\subsubsection{Augment: Blaster Master [3]}
-The fiery explosion burns with voracious intensity. This manifestation gains the \textlf{Heavy weapon} 1 effect.
-
-
-\subsection{Freezing storm [4] (P)}
-For 2 action points you choose a region of radius 5 m radius (1 combat area) within a range of 2 (25 m) and rain a shower of freezing ice shards upon it. Creatures within the area suffer a hit with normal \textlf{lethality}. For 10 minutes the area is \textlf{rough terrain}, anyone entering the area suffers a hit with normal \textlf{lethality}. This is a \textlf{persistent} effect.
+\subsection{Freezing eruption [4] (P)}
+An icey aetheric field creates a vortex of intense cold. For 2 action points you choose a region of radius 5 m radius (1 combat area) within a range of 2 (25 m) and freezing shards of ice erupt from the ground. Creatures within the area must \textlf{resist(R)} or suffer damage with normal \textlf{lethality}. For 10 minutes the area is \textlf{rough terrain}, anyone entering, or leaving, the area must \textlf{resist(R)} or suffer damage normal \textlf{lethality}. This is a \textlf{persistent} effect.
 \subsubsection{Augment: Sub-zero [2]}
 The cost of this manifestation is reduced by 1 action point.
 
@@ -621,16 +629,16 @@ Guided motion can target an enemy and confer an \textlf{edge} penalty instead if
 
 \subsection{Ignite [2]}
 \label{spell:ignite}
-You infuse your aether into generating a resonance between your target and the element of fire. This manifestation can be used on a chosen target within range 1 (15 m). The fire created by Ignite also suffers from normal physical restrictions., i.e. You may not set fire to a creature unless it is naturally flammable, covered in oil, or circumstantially vulnerable. Materials like metals can be heated by this effect to burn their bearer. Setting fire to the clothes of a foe does no great harm to him (it might cause weak enemies to panic).
+Your aether can generate a resonance between your target and the element of fire. This manifestation can be used on a chosen target within range 1 (15 m). The fire created by Ignite also suffers from normal physical restrictions., i.e. You may not set fire to a creature unless it is naturally flammable, covered in oil, or circumstantially vulnerable. Materials like metals can be heated by this effect to burn their bearer. Setting fire to the clothes of a foe does no great harm to him (it might cause weak enemies to panic).
 
 
 \subsection{Illuminate [2]}
 \label{spell:illuminate}
-You infuse an object with aether, causing it to resonate with the aetheric field of light. A single small object you touch begins to emit a soft aetheric glow. This provides low-light illumination over a single combat area (around a 5 m radius). This lasts for up to 6 hours.
+You imbue an object with aether, causing it to resonate with the aetheric field of light. A single small object you touch begins to emit a soft aetheric glow. This provides low-light illumination over a single combat area (around a 5 m radius). This lasts for up to 6 hours.
 
 
 \subsection{Iron arm [4] (P)}
-You infuse a creature with aether that resonates with the musculature of their body. A chosen creature within range 1 (15 m) gains +1 \textlf{power}. This is a \textlf{persistent} effect that lasts up to 1 minute.
+You touch a creature with an aetheric field that resonates with the musculature of their body. A chosen creature within range 1 (15 m) gains +1 \textlf{power}. This is a \textlf{persistent} effect that lasts up to 1 minute.
 
 
 \subsection{Mimic sound [2]}
@@ -639,12 +647,12 @@ You subtly leak aether into the air, causing it to vibrate in a chosen pattern. 
 
 \subsection{Orb of aether [3] (P)}
 \label{spell:orb-light}
-You can infuse your aether into the aetheric field of light itself, creating a condensed orb of luminosity. This manifests as floating orb of aether that can move a distance of 15 m (range 1) each turn. The orb provides full illumination within 5 m (1 combat area) of itself and \textlf{low} light within 15 m (radius 1). This lasts up to 1 hour and is a \textlf{persistent} effect.
+You can imbue your aether into the aetheric field of light itself, creating a condensed orb of luminosity. This manifests as floating orb of aether that can move a distance of 15 m (range 1) each turn. The orb provides full illumination within 5 m (1 combat area) of itself and \textlf{low} light within 15 m (radius 1). This lasts up to 1 hour and is a \textlf{persistent} effect.
 
 
 \subsection{Overgrowth [3]}
 \label{spell:overgrowth}
-Plants have their own variety of aetheric field, you can infuse aether into this field to create a resonance. You may choose a region of radius 5 m radius (1 combat area) within a range of 1 (15 m) and make plant growth explode from the ground. This region is now \textlf{rough terrain}.
+Plants have their own variety of aetheric field, you can project your aether into this field to create a resonance. You may choose a region of radius 5 m radius (1 combat area) within a range of 1 (15 m) and make plant growth explode from the ground. This region is now \textlf{rough terrain}.
 
 
 \subsection{Paths in the aether [2]}
@@ -659,7 +667,7 @@ You can store 2 predictions at once.
 
 \subsection{Resonant motion [2]}
 \label{spell:min-tele}
-You infuse aether into objects so that their aetheric fields resonate with motion. This allows you to exert the force of a single hand to perform simple actions on an object visible to you within range 1 (15 m).
+You imbue aether into objects so that their aetheric fields resonate with motion. This allows you to exert the force of a single hand to perform simple actions on an object visible to you within range 1 (15 m).
 \subsubsection{Augment: Major resonance [3]}
 The aethermancer is far more attuned to the resonance of motion, allowing the aethermancer to manipulate an object up to a maximum weight of 20 kg per point of \textlf{might}. If the object is used as a weapon, it uses the aethermancer's \textlf{aethermancy} for \textlf{aim}. The bonus \textlf{Power} of such a weapon is given by the excess lifting force of the manifestation (that not required to actually move the object):  + 1 per 10 kg excess. The \textlf{power} for grabbing objects is calculated in the same manner. If multiple objects are controlled, the \textlf{Power} bonus from excess lifting force may be divided between them at the aethermancer's discretion. This manifestation requires that the aethermancer to maintain full concentration, in combat they must spend an action point to manipulate objects with this power.
 
@@ -671,7 +679,7 @@ Plants and roots can be made to strike at your foes, using your \textlf{aetherma
 
 
 \subsection{Sapping aether [4] (P)}
-You infuse a discordant aetheric field into a target, weakening their body. If a target within range 1 (15 m) fails a \textlf{resist(R)} check then, whenever they lose \textlf{endurance} they lose 1 additional point. This lasts for up to 1 minute and  is a \textlf{persistent} effect.
+You project a discordant aetheric field into a target, weakening their body. If a target within range 1 (15 m) fails a \textlf{resist(R)} check then, whenever they lose \textlf{endurance} they lose 1 additional point. This lasts for up to 1 minute and  is a \textlf{persistent} effect.
 \subsubsection{Augment: Field [2]}
 If used for 2 action points this affects all creatures within a radius of 5 m (1 combat area).
 
@@ -681,7 +689,7 @@ Light has its own aetheric field and your aether can be used to create a counter
 
 
 \subsection{Transfix [3] (P)}
-You infuse your aether into a creature, disrupting its aetheric field to fill its mind with a deluge of sensory information. A single target within range 1 (15 m) must \textlf{resist(R)} or stand transfixed (no actions allowed) for 10 minutes. A \textlf{resist} attempt may be made at the end of each turn to end the effect. This is \textlf{persistent} effect and any damage ends the effect immediately. 
+You imbue your aether into a creature, disrupting its aetheric field to fill its mind with a deluge of sensory information. A single target within range 1 (15 m) must \textlf{resist(R)} or stand transfixed (no actions allowed) for 10 minutes. A \textlf{resist} attempt may be made at the end of each turn to end the effect. This is \textlf{persistent} effect and any damage ends the effect immediately. 
 \subsubsection{Augment: Field [2]}
 If used for 2 action points this manifestation affects all creatures within a radius of 5 m (1 combat area).
 \subsubsection{Augment: Amplification [3]}
@@ -710,7 +718,7 @@ This makes \textlf{Stone skin} a \textlf{persistent} effect that lasts up to 10 
 
 
 \subsection{Suggestion [3]}
-A creature's own aetheric field can be infused with aether to make its mind more open and malleable. Make a single-sentence suggestion of an action to the target, on a failed \textlf{Resist(W)} check they follow the suggestion willingly. This suggestion will automatically fail if it would
+A creature's own aetheric field can be altered with aether to make its mind more open and malleable. Make a single-sentence suggestion of an action to the target, on a failed \textlf{Resist(W)} check they follow the suggestion willingly. This suggestion will automatically fail if it would
 be harmful to the victim themself or their friends/allies. Specify 1 additional suggestion per level of \textlf{critical success} for the aethermancer on \textlf{resist}. 		
 \subsubsection{Augment: Manipulation [2]}
 Your mastery of the aetheric fields in brains allows you to implant beliefs or feeling into a target via suggestion. In addition suggestion no longer fails if it would be harmful to the victims friends/allies.
@@ -729,7 +737,7 @@ Your mastery of the air means that this power can be  manifested with ferocious 
 
 
 \subsection{Warp space [5]}
-You infuse your aether around a creature, warping the aetheric field of space itself. For 1 action point you can move a target creature, which can attempt to \textlf{resist(C)} if it wants to. This moves the target a distance up to range 2 (25 m). This cannot affect targets more than 1 size category larger than the aethermancer without 1 level of \textlf{critical success} for the aethermancer on \textlf{resist} per size additional category difference.
+You create an aetheric resonance around a creature, warping the aetheric field of space itself. For 1 action point you can move a target creature, which can attempt to \textlf{resist(C)} if it wants to. This moves the target a distance up to range 2 (25 m). This cannot affect targets more than 1 size category larger than the aethermancer without 1 level of \textlf{critical success} for the aethermancer on \textlf{resist} per size additional category difference.
 
 
 \subsection{Weather sense [2]}
@@ -938,7 +946,7 @@ A weapon may have one quality enhancement and one other enhancements. However, w
 (Crossbow only) The weapon is fitted with expanded armatures and space for two bolts. It can thus fire two bolts with a single trigger release. This grants \textlf{Burst} + 1 on attacks made with the crossbow. Cost: Base cost x 3 + 1 g. 
 
 \subsection{Special Payload}
-(Crossbow only) The armatures and bolt track of the bow are modified to carry larger and heavier bolts. This configures the crossbow to fire specialised ammunition that can carry explosives (bomb from infusary - Section~\ref{sec:alch}), chains/ropes/nets, or poisons and other chemicals that spray in a radius of 0 around the impact point. Cost: 5 g.
+(Crossbow only) The armatures and bolt track of the bow are modified to carry larger and heavier bolts. This configures the crossbow to fire specialised ammunition that can carry explosives (bomb from infusary - Section~\ref{sec:infuse}), chains/ropes/nets, or poisons and other chemicals that spray in a radius of 0 around the impact point. Cost: 5 g.
 
 \subsection{Experimental Breach}
 (Black Powder Weapons only) The weapon can be loaded through a opening in the barrel, rather than down the muzzle. This reduces the \textlf{Reload} time of the weapon by one rank (reduce paired pistols to \textlf{Reload} 1). However, if the user scores a \textlf{Critical Failure} with the weapon roll 3d6 in addition to normal \textlf{Black Powder} effects. On a score of $8-$ the weapon needs 50 s worth of repairs before it works again, on $9+$ it jams requiring 2 action points be spent to clear the jam. Cost: 10 g.
@@ -993,10 +1001,10 @@ This cost reflects an average price that the item would be purchasable for, from
 Required by a healer to use his healing skill, each use of the skill consumes a bandage.
 
 \subsubsection*{Infuser's tools}
-A complex piece of equipment that allows an infuser to purify and distil various liquids, this is required for the creation of infusions (see Section~\ref{sec:alch}).
+A complex piece of equipment that allows an infuser to purify and distil various liquids, this is required for the creation of infusions (see Section~\ref{sec:infuse}).
 
 \subsubsection*{Glass Vial}
-A simple glass vial with a stopper, used to hold liquids, this is needed to hold any brew created by an infuser (see Section~\ref{sec:alch}).
+A simple glass vial with a stopper, used to hold liquids, this is needed to hold any brew created by an infuser (see Section~\ref{sec:infuse}).
 
 \subsubsection*{Lock-pick}
 A small piece of cunningly bent metal that can be used to open a lock with a Mechanical skill check opposed to the difficulty of the lock, on a failure the lock-pick breaks.
