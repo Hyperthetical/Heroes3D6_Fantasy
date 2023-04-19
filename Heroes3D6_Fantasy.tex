@@ -24,6 +24,15 @@
 \usepackage[a4paper,margin=2cm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
+\usepackage{fancyhdr}
+\usepackage{titling}
+\title{\textbf{\huge Heroes3D6\\Fantasy role-playing rules add-on}}
+\author{Geoff Beck}
+\predate{\centering}
+\date{}
+\postdate{\vfill{\copyright 2021-2023 Geoff Beck. This work is licensed under a Creative Commons Attribution- ShareAlike 4.0 License. To view a copy of this license visit: \url{https://creativecommons.org/licenses/by-sa/4.0/legalcode}}\hfill}
+\usepackage{lipsum}
+\pagestyle{plain}
 
 
 \newcommand{\dicediffbase}{9}
@@ -32,13 +41,11 @@
 \newcommand{\textlf}[1]{\textbf{\titlecap{#1}}}
 \newcommand{\textlfirst}[1]{\textbf{\textit{\titlecap{#1}}}}
 
-\title{\textbf{\huge Heroes3D6\\Fantasy role-playing rules add-on}}
-\author{Geoff Beck}
-\date{}
+
 
 \begin{document}
-\maketitle
 \frontmatter
+\maketitle
 \tableofcontents
 \mainmatter
 
@@ -201,10 +208,10 @@ Elves live long lives and thus have time to pursue their skills to a point few o
 The mus-folk (or `Musmus' in their own language) resemble large rats. They reach a maximum height/length of 3 - 4 ft and tend to inhabit the margins of human settlements where they are regarded as a mixture of pest and second-class citizen (rude terms for them include `squeakers' and `ratties'). Their own language consists of chirps and squeaks rather than words. However, they are fully capable of producing human and elvish speech. When they do, it comes out in a rapid torrent of words infused with poor grammar and often features repetition when they are excited. Mus-folk prefer underground dwellings and make burrows throughout the highland peaks, with a significant population in Stormheight itself. Their prolific digging means they gravitate towards mining for minerals and aether. They are often stereotyped as light-fingered, insular, and mischievous by other species.  
 
 \subsubsection*{Sneak \& squeak}
-Mus-folk are naturally stealthy. They can always choose proficiency in \textlf{stealth}, even if it does not fit their background otherwise. In addition, they have the \textlf{cunning plan perk} (add \textlf{cunning} to \textlf{power} for \textlf{sneak attacks}.)
+Mus-folk are naturally stealthy. They can always choose proficiency in \textlf{stealth}, even if it does not fit their background otherwise. In addition, they have the \textlf{cunning plan perk} (add 1+\textlf{cunning} to \textlf{power} for \textlf{sneak attacks}.)
 
 \subsubsection*{Dark-dwellers}
-Mus-folk ignore the penalties associated with \textlf{low light} conditions.
+Mus-folk ignore the penalties associated with \textlf{low light} conditions and treat total \textlf{darkness} as \textlf{low light}.
 
 \subsubsection*{Second-class citizens}
 Mus-folk will often experience prejudicial treatment from humans and elves. 
@@ -219,7 +226,7 @@ Other species have a stereotyped view of Trogs as stupid and violent (Mus-folk v
 Trogs are extremely durable and thus have + 1 \textlf{endurance}. 
 
 \subsubsection*{Dark-dwellers}
-Trogs ignore the penalties associated with \textlf{low light} conditions.
+Trogs ignore the penalties associated with \textlf{low light} conditions and treat total \textlf{darkness} as \textlf{low light}.
 
 \subsubsection*{Second-class citizens}
 Trogs will often experience prejudicial treatment from humans and elves.
@@ -237,7 +244,7 @@ A new character may choose one piece of armour and up to three weapons from Tabl
 		Weapon & Power & Hands &  Lethality & Notes\\
 		\hline
 		Rusty sword & +1/- & 2/1 & N & -\\
-		Corroded knife & - & 1 & N & Small\\
+		Corroded dagger & - & 1 & N & Small\\
 		Notched axe & +1/- & 2/1 & N & -\\
 		Worn crossbow & +1 & 2 & N & Reload 2, Range 3\\
 		Pitted hammer & - & 2/1 & N & Penetration 2/1 \\
@@ -401,11 +408,8 @@ These open up new bonuses to different modes of combat specific to this setting,
 \textlf{Passive perk} (Requires \textlf{Weapon proficiency: Swords}). The character delivers their finishing blows with the point of a blade. While wielding a sword, the character's attacks gain \textlf{Rending} 1 against victims with missing \textlf{endurance}.
 
 
-\subsection{Loose aether [2]}
-\textlf{Passive perk}. The character has learned to regather dissipating aether when a manifestation unravels on them. If the character fails to produce an aether manifestation, they do not expend the aether point. This does not include \textlf{critical failures}.
-
-\subsubsection{Upgrade: Aetheric frugality [2]}
-(Requires \textlf{loose aether}). \textlf{loose aether} now applies to \textlf{critical failures} as well.
+\subsection{Loose aether [3]}
+\textlf{Passive perk}. The character has learned to regather dissipating aether when a manifestation fails. If the character aether manifestations are successfully produced but fail to cause any effect, the spent aether point is regained.
 
 
 \subsection{Main gauche [3]}
@@ -466,35 +470,35 @@ These open up new bonuses to different modes of combat specific to this setting,
 \section{Aether manifestations}
 \label{sec:manifestations}
 
-All manifestations are \textlf{active perks}. See section~\ref{sec:aethermancy} for rules on how to produce manifestations. Experience costs are listed in square brackets [], whereas \textlf{aethermancy} difficulty is given in round brackets (). A P indicates a \textlf{persistent} manifestation. Note that these can be purchased even if the character does not have \textlf{aethermancy proficiency}. 
+All manifestations are \textlf{perks} and can be purchased even if the character does not have \textlf{aethermancy proficiency}. See section~\ref{sec:aethermancy} for rules on how to produce manifestations. Experience costs are listed in square brackets, e.g. [3], whereas \textlf{aethermancy} difficulty is given in round brackets, e.g. (8). A P indicates a \textlf{persistent} manifestation, e.g. (8,P). 
 
 
 \subsection{Aether siphon (10) [2]}
-An aethermancer can establish a resonance with another creature such that the aether is stripped from its body. For 2 action points (but no aether points) a chosen target within range 0 (5 m) must \textlf{resist(C)} or lose an aether point. If the target has no aether points, it loses an \textlf{endurance} instead (this cannot be increased by \textlf{critical success}). If the aethermancer wins the \textlf{resist} check, they gain 1 aether point, failure incurs a \textlf{moment of weakness}.
+\textlf{Active perk}. An aethermancer can establish a resonance with another creature such that the aether is stripped from its body. For 2 action points (but no aether points) a chosen target within range 0 (5 m) must \textlf{resist(C)} or lose an aether point. If the target has no aether points, it loses an \textlf{endurance} instead (this cannot be increased by \textlf{critical success}). If the aethermancer wins the \textlf{resist} check, they gain 1 aether point, failure incurs a \textlf{moment of weakness}.
 \subsubsection{Upgrade: Voracious siphon [4]}
 The action point cost of \textlf{aether siphon} is reduced to 1.  
 
 
 \subsection{Aetheric wall (10,P) [3]}
-For 1 action point you manifest a wall of shimmering aether around a radius of 5 m (1 combat area) within a range of 2 (25 m). Passing through the wall costs any creature 1 action point and requires a \textlf{resist(M)} check, failure means they cannot traverse the wall and suffer damage with \textlf{normal lethality} (\textlf{critical success} for the aethermancer on the \textlf{resist} increments the damage severity). This lasts for 10 minutes and is a \textlf{persistent} manifestation.
+\textlf{Active perk}. For 1 action point you manifest a wall of shimmering aether around a radius of 5 m (1 combat area) within a range of 2 (25 m). Passing through the wall costs any creature 1 action point and requires a \textlf{resist(M)} check, failure means they cannot traverse the wall and suffer damage with \textlf{normal lethality} (\textlf{critical success} for the aethermancer on the \textlf{resist} increments the damage severity). This lasts for 10 minutes and is a \textlf{persistent} manifestation.
 
 
-\subsection{Animal aether (7) [2]}
-Every living creature hums with an aetheric field. By carefully tuning your own aetheric field into resonance you can hear the mood and emotions of animals. This lasts for up to 1 hour.
-\subsubsection{Upgrade: Animal resonance [2]}
-Your mastery of the aetheric fields of animals allows you to communicate emotions to them as well as attempt to \textlf{persuade} or \textlf{deceive} them while \textlf{animal aether} is active.
+\subsection{Animal aether (-) [3]}
+\textlf{Passive perk}. Every living creature hums with an aetheric field. By carefully tuning your own aetheric field into resonance you can hear the mood and emotions of animals. 
+\subsubsection{Upgrade: Animal resonance [3]}
+Your mastery of the aetheric fields of animals allows you to communicate emotions to them as well as attempt to \textlf{persuade} or \textlf{deceive} them.
 
 
 \subsection{Animate homunculus (9) [2]}
-You can shape a small creature/object out of any given material (30 cm is the maximum size), this is then imbued with aether (you need only make the aethermancy check when creating a homunculus). This grants it a kind of limited life, it can be controlled directly by you (this requires your full concentration). Otherwise it remains inert. A homunculus has no skill \textlf{proficiencies} and cannot inflict damage in combat.
+\textlf{Active perk}. You can shape a small creature/object out of any given material (30 cm is the maximum size), this is then imbued with aether (you need only make the aethermancy check when creating a homunculus). This grants it a kind of limited life, it can be controlled directly by you (this requires your full concentration). Otherwise it remains inert. A homunculus has no skill \textlf{proficiencies} and cannot inflict damage in combat. You can create 1 extra homunculus per level of \textlf{critical success} on the cast.
 \subsubsection{Upgrade: Automaton [3]}
 Your homunculi are always animated and will obey simple verbal commands. You may endow a homunculus with a single \textlf{skill proficiency} (that you have) on creation.
-\subsubsection{Upgrade: Golem (+3) [4]}
-The maximum size, for a single homunculus, is increased to medium (man-sized) creatures/objects, these can make unarmed attacks in combat (with \textlf{weapon proficiency}). 
+\subsubsection{Alternate: Golem (12) [4]}
+You can create a single medium (man-sized) homunculus but can only have one at any time. These creatures can make unarmed attacks in combat (with \textlf{weapon proficiency}). 
 
 
 \subsection{Arcing aether (10) [3]}
-You mould your aether into a resonance with elemental lightning. For 2 action points, aetheric lighting leaps from your body and strikes a target within range 2 (25 m). The target must \textlf{resist(R)} or suffer damage with \textlf{normal lethality}. The lightning then leaps randomly to a second target within range 1 of the first (preferring those nearer by), and a third within range 1 of the second. Any individual target can only be struck once by this manifestation.
+\textlf{Active perk}. You mould your aether into a resonance with elemental lightning. For 2 action points, aetheric lighting leaps from your body and strikes a target within range 2 (25 m). The target must \textlf{resist(R)} or suffer damage with \textlf{normal lethality}. The lightning then leaps randomly to a second target within range 1 of the first (preferring those nearer by), and a third within range 1 of the second. Any individual target can only be struck once by this manifestation.
 \subsubsection{Upgrade: Resonant arcing [4]}
 The lightning gains an extra leap every time it causes damage and targets can now be struck more than once (but cannot be struck twice in a row).
 \subsubsection{Upgrade: Paralytic arcs [2]}
@@ -502,29 +506,29 @@ Victims damaged by this manifestation are \textlf{immobilised} in their next tur
 
 
 \subsection{Befuddle (10) [2]}
-A discordant aetheric projection removes your target's ability to distinguish friends from foes. If the target fails a \textlf{resist(W)} check, they regard all creatures as hostile and dangerous. This means they can panic, run away, or lash-out at anything nearby. The GM should choose combat targets and behaviour for the victim randomly. This lasts up to 1 minute. Each round, after the first, the victim may re-attempt to \textlf{resist}.
+\textlf{Active perk}. A discordant aetheric projection removes your target's ability to distinguish friends from foes. If the target fails a \textlf{resist(W)} check, they regard all creatures as hostile and dangerous. This means they can panic, run away, or lash-out at anything nearby. The GM should choose combat targets and behaviour for the victim randomly. This lasts up to 1 minute. Each round, after the first, the victim may re-attempt to \textlf{resist}.
 \subsubsection{Alternate: Bewildering barrage (12,P) [3]}
 \textlf{Befuddle} becomes a \textlf{persistent} effect. Thus, if the victim \textlf{resists} they do not experience the effects for that round. On subsequent rounds they must continue to \textlf{resist} until the effect is ended.
 
 
 \subsection{Bend light (10,P) [3] }
 \label{spell:bend-light}
-Aether flows from your fingers creating an aetheric lattice that bends light. At a distance up to range 2 (25 m), you can create a stationary illusion up to medium size. Anyone looking at this effect must \textlf{resist(W)} to decide if they are fooled. This is a \textlf{persistent} effect. The illusion is only visual, it makes no sounds, smells, and cannot be touched. 
+\textlf{Active perk}. Aether flows from your fingers creating an aetheric lattice that bends light. At a distance up to range 2 (25 m), you can create a stationary illusion up to medium size. Anyone looking at this effect must \textlf{resist(W)} to decide if they are fooled. This is a \textlf{persistent} effect. The illusion is only visual, it makes no sounds, smells, and cannot be touched. 
 \subsubsection{Upgrade: Major illusion [3]}
 You can bend light with such dexterity that you can create illusions up to 5 m in size. 
 
 
 \subsection{Blinding ray (8) [2]}
 \label{spell:blind-ray}
-You pour aether into a light-source you touch, focusing its illumination into a searingly bright beam. The beam strikes a chosen 5 m radius (1 combat area). If any victim fails a \textlf{resist(R)} check, it is \textlf{blind} until the end of its next turn. Additionally, the normal lighting from the light source is removed for the next round, but the target area is fully illuminated for this time. The blindness lasts 1 additional round per level of \textlf{critical success} for the aethermancer on \textlf{resist}.
+\textlf{Active perk}. You pour aether into a light-source you touch, focusing its illumination into a searingly bright beam. The beam strikes a chosen 5 m radius (1 combat area). If any victim fails a \textlf{resist(R)} check, it is \textlf{blind} until the end of its next turn. Additionally, the normal lighting from the light source is removed for the next round, but the target area is fully illuminated for this time. The blindness lasts 1 additional round per level of \textlf{critical success} for the aethermancer on \textlf{resist}.
 
 
 \subsection{Clinging aether (11) [3]}
-For 1 action point you blast a 5 m radius (1 combat area) within a range of 1 (15 m) with crackling aether that anchors everything to the earth. All creatures in the area must \textlf{resist(C)} or be \textlf{immobilised} for their next two turns (1 additional turn per level of aethermancer \textlf{critical success} on the \textlf{resist} check).
+\textlf{Active perk}. For 1 action point you blast a 5 m radius (1 combat area) within a range of 1 (15 m) with crackling aether that anchors everything to the earth. All creatures in the area must \textlf{resist(C)} or be \textlf{immobilised} for their next two turns (1 additional turn per level of aethermancer \textlf{critical success} on the \textlf{resist} check).
 
 
 \subsection{Compel (10) [3]}
-You project aether into a target by touch, forcing them to make an action chosen by you if they fail a \textlf{Resist(W)} check. This fails if the action would harm the target. Specify one extra action per level of \textlf{critical success} for the aethermancer on \textlf{resist}. The victim is aware that they are being forced to act.
+\textlf{Active perk}. You project aether into a target by touch, forcing them to make an action chosen by you if they fail a \textlf{Resist(W)} check. This fails if the action would harm the target. Specify one extra action per level of \textlf{critical success} for the aethermancer on \textlf{resist}. The victim is aware that they are being forced to act.
 \subsubsection{Upgrade: Dominate [3]}
 Your control is so strong that Compel will not fail if the action would be harmful to the victim itself.
 \subsubsection{Upgrade: Project aether [2]}
@@ -532,25 +536,25 @@ You can now manifest this power at range 1.
 
 
 \subsection{Concussive wave (9) [2]}
-Your aether blasts out in a wave of concussive force. This \textlf{knocks back} all adjacent creatures and objects, size large or smaller, if they fail \textlf{resist (M)}. 
+\textlf{Active perk}. Your aether blasts out in a wave of concussive force. This \textlf{knocks back} all adjacent creatures and objects, size large or smaller, if they fail \textlf{resist (M)}. 
 \subsubsection{Upgrade: Violent concussion [3]}
 Victims \textlf{knocked back} are also \textlf{knocked down}. If they enter \textlf{rough terrain} or \textlf{cover} as a result of the \textlf{knock back}, they suffer damage with \textlf{normal lethality}.
 
 
 \subsection{Consuming darkness (10,P) [3]}
-Light has its own aetheric field and your aether can be used to create a counter vibrating field that extinguishes lights. All light disappears within a chosen radius of 1 (around 15 m). Creatures within the region fight using the \textlf{dark} lighting rules. This lasts until you cancel it.
+\textlf{Active perk}. Light has its own aetheric field and your aether can be used to create a counter vibrating field that extinguishes lights. All light disappears within a chosen radius of 1 (around 15 m). Creatures within the region fight using the \textlf{dark} lighting rules. This lasts until you cancel it.
 
 
 \subsection{Damping field (7,P) [2]}
 \label{spell:arcane-armour}
-For 1 action point you envelope yourself in a high-pressure field of aether that depletes the force of incoming attacks. This manifests as a shimmering in the air around you and all attacks made against you cost 1 extra action point. This manifestation lasts for 10 minutes and is a \textlf{persistent} effect.
+\textlf{Active perk}. For 1 action point you envelope yourself in a high-pressure field of aether that depletes the force of incoming attacks. This manifests as a shimmering in the air around you and all attacks made against you cost 1 extra action point. This manifestation lasts for 10 minutes and is a \textlf{persistent} effect.
 \subsubsection{Upgrade: Ablation [2]}
 When \textlf{damping field} is active you can spend a reaction point, when hit by an attack, to add an additional 1+\textlf{Wit} to your \textlf{Toughness} until the attack is resolved.
 
 
 \subsection{Discordant blast (8) [2]}
 \label{spell:sorc-blast}
-This costs 1 action point and projects a focussed aetheric vibration that disrupts solid matter. A chosen target within range 2 (25 m) must make two \textlf{resist(C)} checks or suffer damage with \textlf{normal lethality} for each failure (\textlf{critical success} for the aethermancer on \textlf{resist} increments damage severity). 
+\textlf{Active perk}. This costs 1 action point and projects a focussed aetheric vibration that disrupts solid matter. A chosen target within range 2 (25 m) must make two \textlf{resist(C)} checks or suffer damage with \textlf{normal lethality} for each failure (\textlf{critical success} for the aethermancer on \textlf{resist} increments damage severity). 
 \subsubsection{Upgrade: Resounding blast [2]}
 This manifestation now inflicts \textlf{knocked down} if it causes damage. This only applies to \textlf{large creatures} or smaller.
 \subsubsection{Upgrade: The undoing (+X) [4]}
@@ -558,21 +562,21 @@ Pouring raw aether into the target causes it to unravel on a fundamental level. 
 
 
 \subsection{Earthquake (12,P) [4]}
-You flood the ground with aether, making it roll and buck as though it was alive. For 2 action points you make the ground violently shake. All creatures adjacent to you must \textlf{resist(M)} each round or be knocked down (you are unaffected). All affected creatures are \textlf{stunned}, even if they pass the \textlf{resist(M)}. This can be maintained as a \textlf{persistent} effect for up to 1 minute. If the aethermancer moves this manifestation moves with them.
+\textlf{Active perk}. You flood the ground with aether, making it roll and buck as though it was alive. For 2 action points you make the ground violently shake. All creatures adjacent to you must \textlf{resist(M)} each round or be knocked down (you are unaffected). All affected creatures are \textlf{stunned}, even if they pass the \textlf{resist(M)}. This can be maintained as a \textlf{persistent} effect for up to 1 minute. If the aethermancer moves this manifestation moves with them.
 \subsubsection{Upgrade: Project aether [2]}
 You can now manifest this power at range 2 (25 m), instead of shaking the ground adjacent to you. You can change the target area on subsequent turns (once per turn only) for 1 action point.
 
 
 \subsection{Embrace of iron (9) [3]}
-The aethermancer tunes the aetheric field of a chosen object within range 2 (25 m) to repel/attract metal. Any creature adjacent to the target must \textlf{resist(M)} or be \textlf{disarmed} of any held metal objects each turn. Dropped metal objects are pushed/pulled a distance 1 away/towards the object. If attract was chosen, then there is \textlf{edge+} on \textlf{aim} to hit it with metal implements. The reverse applies for repel. Creatures in \textlf{medium} or \textlf{heavy armour} count the area adjacent to the target as \textlf{rough terrain}.
+\textlf{Active perk}. The aethermancer tunes the aetheric field of a chosen object within range 3 (35 m) to repel/attract metal (chosen on manifestation). Any creature within range 1 (15 m) to the target must \textlf{resist(M)} or be \textlf{disarmed} of any held metal objects each turn. Dropped metal objects are pushed/pulled a distance 1 away/towards the object. If attract was chosen, then there is \textlf{edge+} on \textlf{aim} to hit the target object with metal implements. The reverse applies for repel. Creatures in \textlf{medium} or \textlf{heavy armour} (made of metal) count the area within range 1 of the target as \textlf{rough terrain}.
 
 
-\subsection{Eyes of aether (7) [2]}
-You can alter your senses to perceive flows of the aether. This renders you blind, instead you view the world as the flow of the aether. This costs no aether points to use and may be cancelled at any time.
+\subsection{Eyes of aether (-) [2]}
+\textlf{Passive perk}. You can alter your senses to perceive flows of the aether. This renders you blind, instead you view the world as the flow of the aether. This costs no aether points to use and may be cancelled at any time.
 
 
 \subsection{Fearful frequencies (8) [2]}
-You bombard a target, within range 2 (25 m), with aetheric vibrations, causing a cloud of fear to pass across their mind. If they fail a \textlf{resist(R)} check, they cannot approach the aethermancer, or remain adjacent to them, for 1 minute. Each round, after the first, the victim may re-attempt the \textlf{resist(R)}. 
+\textlf{Active perk}. You bombard a target, within range 2 (25 m), with aetheric vibrations, causing a cloud of fear to pass across their mind. If they fail a \textlf{resist(R)} check, they cannot approach the aethermancer, or remain adjacent to them, for 1 minute. Each round, after the first, the victim may re-attempt the \textlf{resist(R)}. 
 \subsubsection{Upgrade: Terrible tremors [3]}
 You have learned to afflict the mind with absolute terror. The target of this manifestation suffers \textlf{edge-} to all rolls while this effect persists. 
 \subsubsection{Upgrade: Frightful field [2]}
@@ -581,7 +585,7 @@ You have learned to afflict the mind with absolute terror. The target of this ma
 
 
 \subsection{Fiery surge (10) [3]}
-You can fuel a flame via aether infusion, greatly increase the intensity of an existing fire within range 2 (25 m). Any creature that makes contact with such a flame (i.e. enters or is in the same combat area) must \textlf{resist(C)} or suffer damage with \textlf{normal lethality}. This fire burns for 2 rounds before going out. This manifestation sets all flammable material within radius 0 (5 m) on fire.
+\textlf{Active perk}. You can fuel a flame via aether infusion, greatly increase the intensity of an existing fire within range 2 (25 m). Any creature that makes contact with such a flame (i.e. enters or is in the same combat area) must \textlf{resist(C)} or suffer damage with \textlf{normal lethality}. This fire burns for 2 rounds before going out. This manifestation sets all flammable material within radius 0 (5 m) on fire.
 \subsubsection{Upgrade: Ravenous flames [3]}
 The fires burn with greater hunger, gaining \textlf{burst} + 1.
 \subsubsection{Alternate: Explosive emanation [4]}
@@ -590,13 +594,13 @@ This increases the action point cost of the manifestation by 1. Instead of inten
 
 \subsection{Flare (10) [2]}
 \label{spell:flare}
-Projecting aether suddenly into a flame within range 2 (25 m), you cause it to burst into in blinding white flash. Anyone who can see the flare must roll \textlf{resist(M)} or be \textlf{staggered} and \textlf{stunned} until the end of the next round, and 1 additional round per level of \textlf{critical failure} on \textlf{resist(M)}. The explosion of the flare itself is harmless.
+\textlf{Active perk}. Projecting aether suddenly into a flame within range 2 (25 m), you cause it to burst into in blinding white flash. Anyone who can see the flare must roll \textlf{resist(M)} or be \textlf{staggered} and \textlf{stunned} until the end of the next round, and 1 additional round per level of \textlf{critical failure} on \textlf{resist(M)}. The explosion of the flare itself is harmless.
 \subsubsection{Upgrade: Burning flare [3]}
 Flare ignites all adjacent creatures, who suffer damage with \textlf{normal lethality} if they failed \textlf{resist(M)} (\textlf{critical success} for the aethermancer on \textlf{resist} increments damage severity).
 
 
 \subsection{Freezing eruption (11,P) [4]}
-An icey aetheric field creates a vortex of intense cold. For 2 action points you choose a region of radius 5 m radius (1 combat area) within a range of 2 (25 m) and freezing shards of ice erupt from the ground. Creatures within the area must \textlf{resist(R)} or suffer damage with \textlf{normal lethality}. For 10 minutes the area is \textlf{rough terrain}, anyone entering or leaving the area must \textlf{resist(R)} or suffer damage \textlf{normal lethality}. This is a \textlf{persistent} effect.
+\textlf{Active perk}. An icey aetheric field creates a vortex of intense cold. For 2 action points you choose a region of radius 5 m radius (1 combat area) within a range of 2 (25 m) and freezing shards of ice erupt from the ground. Creatures within the area must \textlf{resist(R)} or suffer damage with \textlf{normal lethality}. For 10 minutes the area is \textlf{rough terrain}, anyone entering or leaving the area must \textlf{resist(R)} or suffer damage \textlf{normal lethality}. This is a \textlf{persistent} effect.
 \subsubsection{Upgrade: Sub-zero [2]}
 The cost of this manifestation is reduced by 1 action point.
 \subsubsection{Upgrade: Glacial creep [3]}
@@ -604,7 +608,7 @@ In each subsequent round that the manifestation persists, you may choose an addi
 
 
 \subsection{Glacial ray (10) [3]}
-This costs 2 action points. A ray of freezing aether strikes a target within range 2 (25 m). They must \textlf{resist(C)}, failure means they are \textlf{immobilised} and \textlf{vulnerable} until damaged. 
+\textlf{Active perk}. This costs 2 action points. A ray of freezing aether strikes a target within range 2 (25 m). They must \textlf{resist(C)}, failure means they are \textlf{immobilised} and \textlf{vulnerable} until damaged. 
 \subsubsection{Upgrade: Creeping frost [3]}
 \textlf{Glacial ray} applies its effects to a different target after it ends on the initial target.
 \subsubsection{Upgrade: Deep-freeze [2]}
@@ -612,7 +616,7 @@ After the effect of \textlf{Glacial ray} ends, the ice shatters causing all crea
 
 
 \subsection{Grip of the ground (9,P) [3]}
-The aetheric field of objects can be adjusted so they respond more or less strongly to the pull of ground beneath their feet. If used to reduce a target's weight then their movement speed increases by 1 and they gain \textlf{edge+} on \textlf{deflect}. Such targets also have \textlf{damage checks} from falling made with \textlf{edge-}. 
+\textlf{Active perk}. The aetheric field of objects can be adjusted so they respond more or less strongly to the pull of ground beneath their feet. If used to reduce a target's weight then their movement speed increases by 1 and they gain \textlf{edge+} on \textlf{deflect}. Such targets also have \textlf{damage checks} from falling made with \textlf{edge-}. 
 
 If used to increase an objects weight, they must succeed on a \textlf{resist(M)} check each turn or be \textlf{immobilised} and \textlf{stunned}. If the aethermancer achieves \textlf{critical success} then the target suffers damage with \textlf{normal lethality}. Such targets also suffer \textlf{edge+} on \textlf{damage checks} from falling.
 
@@ -620,112 +624,110 @@ This lasts a maximum of 10 minutes.
 
 
 \subsection{Guided motion (9) [3]}
-Aether streams out from you to enhance the movements of another body within range 2 (25 m). This confers \textlf{edge+} to an allied target's \textlf{Athletics} and \textlf{deflect} checks until they fail such a check (maximum 1 hour). You may select one extra target per level of \textlf{critical success} on the \textlf{aethermancy} check.
+\textlf{Active perk}. Aether streams out from you to enhance the movements of another body within range 2 (25 m). This confers \textlf{edge+} to an allied target's \textlf{Athletics} and \textlf{deflect} checks until they fail such a check (maximum 1 hour). You may select one extra target per level of \textlf{critical success} on the \textlf{aethermancy} check.
 \subsubsection{Alternate: Inhibit motion (+2) [4]}
 Guided motion can target an enemy and confer \textlf{edge-} instead, which ends if they pass a penalised check (no \textlf{resist} attempts can be made against this manifestation).
 
 
 \subsection{Ignite (8) [2]}
 \label{spell:ignite}
-Your aether can generate a resonance between your targets and the element of fire. This manifestation can be used on all chosen objects/creatures in a radius 0 region within range 2. The fire created by \textlf{Ignite} also suffers from normal physical restrictions, i.e. you may not set fire to a creature unless it is naturally flammable, covered in oil, or circumstantially vulnerable. Materials like metals can be heated by this effect to burn their bearer (this disarms any damaged victims). Setting fire to the clothes of a foe does no great harm to them, and they can extinguish the fire for 1 action point on their own turn.
+\textlf{Active perk}. Your aether can generate a resonance between your targets and the element of fire, triggering a sudden burst of flame. This manifestation can be used on a chosen object/creature within range 2 (25 m). Add 1 extra target per level of \textlf{critical success} on the cast. Fire created by \textlf{Ignite} also suffers from normal physical restrictions, i.e. you may not set fire to a creature unless it is naturally flammable, covered in oil, or circumstantially vulnerable. Setting fire to the clothes of a foe means they must pass a \textlf{Resist(W)} check each turn or spend the turn panicking, if they succeed then the fire can be extinguished for 2 action points on their own turn.
 
 
 \subsection{Illuminate (7) [2]}
 \label{spell:illuminate}
-You imbue an object with aether, causing it to resonate with the aetheric field of light. A single small object you touch begins to emit a soft aetheric glow. This provides low-light illumination over a single combat area (around a 5 m radius). This lasts for up to 6 hours.
+\textlf{Active perk}. You imbue an object with aether, causing it to resonate with the aetheric field of light. A single small object you touch begins to emit a soft aetheric glow. This provides low-light illumination over a single combat area (around a 5 m radius). This lasts for up to 6 hours.
 
 
 \subsection{Ley of the land (9) [2]}
-You can attune your own aether to the fields within the terrain around you, allowing effortless avoidance of obstructions. This manifestation allows the aethermancer to ignore natural forms of \textlf{rough} or \textlf{dangerous terrain} effects as well as \textlf{edge+} on \textlf{stealth} and \textlf{awareness} checks while in wilderness. This lasts for 1 hour.
+\textlf{Active perk}. You can attune your own aether to the fields within the terrain around you, allowing effortless avoidance of obstructions. This manifestation allows the aethermancer to ignore natural forms of \textlf{rough} or \textlf{dangerous terrain} effects as well as \textlf{edge+} on \textlf{stealth} and \textlf{awareness} checks while in wilderness. This lasts for 1 hour.
 
 
 \subsection{Mend flesh (10+X) [4]}
-An aethermancer can adjust the vibrations of a body's aetheric fields to repair damage. For 2 action points you can reduce the severity of a \textlf{wound} effect on target within range 0 by one level, i.e. from \textlf{badly-wounded} to \textlf{wounded}. The difficulty is determined by the wound severity, $X = 0$ for \textlf{wounded}, $X=2$ for \textlf{badly-wounded}, etc. You cannot restore a target that has died.
+\textlf{Active perk}. An aethermancer can adjust the vibrations of a body's aetheric fields to repair damage. For 2 action points you can reduce the severity of a \textlf{wound} effect on target within range 0 by one level, i.e. from \textlf{badly-wounded} to \textlf{wounded}. The difficulty is determined by the wound severity, $X = 0$ for \textlf{wounded}, $X=2$ for \textlf{badly-wounded}, etc. You cannot restore a target that has died.
 
 
 \subsection{Mimic sound (10) [2]}
-You subtly leak aether into the air, causing it to vibrate in a chosen pattern. This allows you to produce any sound you can imagine, at volumes between a whisper and a shout. The convincingness of this is decided by results of listeners' \textlf{resist(W)} checks.
+\textlf{Active perk}. You subtly leak aether into the air, causing it to vibrate in a chosen pattern. This allows you to produce any sound you can imagine, at volumes between a whisper and a shout. The convincingness of this is decided by results of listeners' \textlf{resist(W)} checks.
 
 
 \subsection{Orb of aether (8,P) [3]}
 \label{spell:orb-light}
-You can imbue your aether into the aetheric field of light itself, creating a condensed orb of luminosity. This manifests as floating orb of aether that can move a distance of 15 m (range 1) each turn. The orb provides full illumination within 5 m (1 combat area) of itself and \textlf{low} light within 15 m (radius 1). This lasts up to 1 hour and is a \textlf{persistent} effect. 
+\textlf{Active perk}. You can imbue your aether into the aetheric field of light itself, creating a condensed orb of luminosity. This manifests as floating orb of aether that can move a distance of 15 m (range 1) each turn. The orb provides full illumination within 5 m (1 combat area) of itself and \textlf{low} light within 15 m (radius 1). This lasts up to 1 hour and is a \textlf{persistent} effect. 
 
 
 \subsection{Overgrowth (11) [3]}
 \label{spell:overgrowth}
-Plants have their own variety of aetheric field, you can project your aether into this field to create a resonance. You may choose a region of radius 5 m radius (1 combat area) within a range of 2 (25 m) and make local plant growth explode from the ground. This region is now \textlf{rough terrain}.
+\textlf{Active perk}. Plants have their own variety of aetheric field, you can project your aether into this field to create a resonance. You may choose a region of radius 5 m radius (1 combat area) within a range of 2 (25 m) and make local plant growth explode from the ground. This region is now \textlf{rough terrain}.
 
 
 \subsection{Pulsing fury (10,P) [4]}
-You radiate an aetheric field that resonates with aggression, enhancing the potency of your allies. All chosen creatures, within range 0 of you, gain +1 \textlf{power}. This is a \textlf{persistent} effect that lasts up to 1 minute.
+\textlf{Active perk}. You radiate an aetheric field that resonates with aggression, enhancing the potency of your allies. All chosen creatures, within range 0 of you, gain +1 \textlf{power}. This is a \textlf{persistent} effect that lasts up to 1 minute.
 
 
 \subsection{Prediction (13) [4]}
-Time itself resonates with aetheric frequencies. You can use this to attempt to peer into possible futures. This manifestation takes 10 minutes to complete. Afterwards, roll 3d6 and put them to one side. At any point within the next 24 hours you may replace one 3d6 roll (made by any creature or character) with the 3d6 you set aside. On a \textlf{critical failure} the GM may instead choose when to make the roll substitution. You may only have one such set of predicted dice available at once.
+\textlf{Active perk}. Time itself resonates with aetheric frequencies. You can use this to attempt to peer into possible futures. This manifestation takes 10 minutes to complete. Afterwards, roll 3d6 and put them to one side. At any point within the next 24 hours you may replace one 3d6 roll (made by any creature or character) with the 3d6 you set aside. On a \textlf{critical failure} the GM may instead choose when to make the roll substitution. You may only have one such set of predicted dice available at once.
 \subsubsection{Upgrade: Forecasting [3]}
 You can store 2 predictions at once.
 
 
+\subsection{Pyromancy (9) [3]}
+\textlf{Active perk}. A careful net of aetheric fields can nudge fire to move=, as if of its own accord. The aethermancer can transport the energies of a fire within range 2 (25 m). The fire can move up to range 3 from its origin. If it is aimed as a projectile then the target must \textlf{resist(C)} or suffer damage with \textlf{normal lethality}. Materials like metals can be heated by this effect to burn their bearer if they fail \textlf{resist(R)} (this disarms any damaged victims).
+
+
 \subsection{Resonant motion (7) [2]}
 \label{spell:min-tele}
-You imbue aether into objects so that their aetheric fields resonate with motion. This allows you to exert the force of a single hand to perform simple actions on an object visible to you within range 2 (25 m).
+\textlf{Active perk}. You imbue aether into objects so that their aetheric fields resonate with motion. This allows you to exert the force of a single hand to perform simple actions on an object visible to you within range 2 (25 m).
 \subsubsection{Upgrade: Major resonance (+3) [5]}
 The aethermancer is far more attuned to the resonance of motion, allowing for the manipulation of an object with weight up to 10 kg plus 20 kg per point of \textlf{might}. If the object is used as a weapon, it uses the aethermancer's \textlf{aethermancy} for \textlf{aim}. The bonus \textlf{Power} of such a weapon is the aethermancers \textlf{Might}. The \textlf{power} for grabbing objects is calculated in the same manner. If multiple objects are controlled, the \textlf{Power} bonus from excess lifting force may be divided between them at the aethermancer's discretion. This manifestation requires that the aethermancer to maintain full concentration, in combat they must spend an action point to manipulate objects with this power.
 
 
 \subsection{Root weaving (11,P) [3]}
-By creating a complex aetheric resonance between yourself and nearby plants, you can call on their assistance to entrap foes. Provided there are plants or other natural growths nearby, this can be used to make roots \textlf{grapple} or \textlf{shove} a chosen creature or object within the foliage (this can be used once per turn but costs no action points). The roots use your \textlf{aethermancy} power score when making opposed checks. This is a \textlf{persistent} effect that can be maintained for up to 10 minutes.
+\textlf{Active perk}. By creating a complex aetheric resonance between yourself and nearby plants, you can call on their assistance to entrap foes. Provided there are plants or other natural growths nearby, this can be used to make roots \textlf{grapple} or \textlf{shove} a chosen creature or object within the foliage (this can be used once per turn but costs no action points). The roots use your \textlf{aethermancy} power score when making opposed checks. This is a \textlf{persistent} effect that can be maintained for up to 10 minutes.
 \subsubsection{Upgrade: Bushwhack [3]}
 Plants and roots can be made to strike at your foes, using your \textlf{aethermancy} for \textlf{aim}. For an action point you can activate a tree to strike at a nearby foe, this attack has \textlf{crushing lethality}.
 
 
 \subsection{Sapping aether (10,P) [4]}
-You project a discordant aetheric field into a target, weakening their body. If a target within range 2 (25 m) fails a \textlf{resist(R)} check then whenever they lose \textlf{endurance}, they lose 1 additional point. This lasts for up to 1 minute and  is a \textlf{persistent} effect.
+\textlf{Active perk}. You project a discordant aetheric field into a target, weakening their body. If a target within range 2 (25 m) fails a \textlf{resist(R)} check then whenever they lose \textlf{endurance}, they lose 1 additional point. This lasts for up to 1 minute and  is a \textlf{persistent} effect.
 \subsubsection{Upgrade: Field [2]}
 If used for 2 action points this affects all creatures within a radius of 5 m (1 combat area).
 
 
 \subsection{Shape earth (7) [3]}
-The ground around you has an aetheric field that can be manipulated. A cunning flow of aether allows one to twist the very earth into any desired shape. The aethermancer may touch earth or stone and then manipulate up to 30 kg of earth, or 15 kg of stone, plus 10 kg earth or stone per point of \textlf{wit}. 
-
-
-%\subsection{Sonic boom (8) [3]}
-%By tuning your aether to resonate with the field of the air around you, a localised over-pressured pocket of air escapes outwards with a booming crash. This \textlf{Staggers} all creatures within a chosen area if they fail a \textlf{resist(R)} check. The chosen area must be within range 2 (25 m).
-%\subsubsection{Upgrade: Thunderous blast [2]}
-%This power now additionally inflicts damage with \textlf{normal lethality} on victims if they failed \textlf{resist} (\textlf{critical success} for the aethermancer on \textlf{resist} increments damage severity).
+\textlf{Active perk}. The ground around you has an aetheric field that can be manipulated. A cunning flow of aether allows one to twist the very earth into any desired shape. The aethermancer may touch earth or stone and then manipulate up to 30 kg of earth, or 15 kg of stone, plus 10 kg earth or stone per point of \textlf{wit}. 
 
 
 \subsection{Stone sense (7) [2]}
 \label{spell:stone-sense}
-Your expert knowledge of aetheric vibrations allows you to extend your hearing through a continuous stone (or earthen) surface or structure. For this purpose, a wall of stone bricks is continuous but soil and dirt do not count (they do not conduct vibrations coherently enough). This power lasts for up to 1 hour.
+\textlf{Active perk}. Your expert knowledge of aetheric vibrations allows you to extend your hearing through a continuous stone (or earthen) surface or structure. For this purpose, a wall of stone bricks is continuous but soil and dirt do not count (they do not conduct vibrations coherently enough). The distance you can move your hearing is range 2 (25 m) + range 1 per level of \textlf{critical success} on the cast. This power lasts for up to 1 hour.
 
 
 \subsection{Stone skin (8) [3]}
-Manipulating the aetheric field of nearby rocks, you draw stone from the ground to clad you in armour. Until the end of the next round, \textlf{damage checks} against you suffer a \textlf{lethality} downgrade (to a minimum of normal). This can be cast with a either an action or reaction point.
+\textlf{Active perk}. Manipulating the aetheric field of nearby rocks, you draw stone from the ground to clad you in armour. Until the end of the next round, \textlf{damage checks} against you suffer a \textlf{lethality} downgrade (to a minimum of normal). This can be cast with a either an action or reaction point.
 \subsubsection{Upgrade: Earth-clad [2] (P)}
 This makes \textlf{Stone skin} a \textlf{persistent} effect that lasts up to 10 minutes.
 
 
 \subsection{Strange attractor (11,P) [4]}
-An intricately twisted pattern of aetheric fields creates a point that draws in all nearby objects. Choose a point within range 2, this point becomes an aetheric singularity. Any creature (\textlf{large creatures} or smaller) within range 1 of the singularity must succeed on a \textlf{resist(M)} check at the start of their turn or be pulled a distance of 1 towards it and be \textlf{immobilised} on their next turn. On a \textlf{critical failure} any held weapons or objects are pulled from their grip. Any creature that spends a whole round within the singularity suffers damage with \textlf{normal lethality}. All loose objects of size large or smaller are also pulled in.
+\textlf{Active perk}. An intricately twisted pattern of aetheric fields creates a point that draws in all nearby objects. Choose a point within range 2, this point becomes an aetheric singularity. Any creature (\textlf{large creatures} or smaller) within range 1 of the singularity must succeed on a \textlf{resist(M)} check at the start of their turn or be pulled a distance of 1 towards it and be \textlf{immobilised} on their next turn. On a \textlf{critical failure} any held weapons or objects are pulled from their grip. Any creature that spends a whole round within the singularity suffers damage with \textlf{normal lethality}. All loose objects of size large or smaller are also pulled in.
 
 
 \subsection{Suggestion (10) [3]}
-A creature's own aetheric field can be altered with aether to make its mind more open and malleable. Make a single-sentence suggestion of an action to the target, on a failed \textlf{Resist(W)} check they follow the suggestion willingly and rationalise it to themselves. This will automatically fail if it would
+\textlf{Active perk}. A creature's own aetheric field can be altered with aether to make its mind more open and malleable. Make a single-sentence suggestion of an action to the target, on a failed \textlf{Resist(W)} check they follow the suggestion willingly and rationalise it to themselves. This will automatically fail if it would
 be harmful to the victim or their friends/allies. Specify 1 additional suggestion per level of \textlf{critical success} for the aethermancer on \textlf{resist}. 		
 \subsubsection{Upgrade: Manipulation [4]}
 Your mastery of the aetheric fields in brains allows you to implant beliefs or feeling into a target via suggestion. In addition suggestion no longer fails if it would be harmful to the victims friends/allies.
 
 
 \subsection{Time warp (12) [5]}
-Projecting your aether towards another creature, you make its own aetheric field discordant with the flow of time. Choose a creature within range 2 (25 m) to either gain or lose an action point (to a minimum of 1) each turn until the effect ends (maximum duration 1 minute). Targets may \textlf{resist(R)} each turn to ignore the effect (it does not end however). Only one action point may be gained or lost each turn in this way. \textlf{critical success} for the aethermancer on \textlf{resist} means the target cannot attempt \textlf{resist} next turn.
+\textlf{Active perk}. Projecting your aether towards another creature, you make its own aetheric field discordant with the flow of time. Choose a creature within range 2 (25 m) to either gain or lose an action point (to a minimum of 1) each turn until the effect ends (maximum duration 1 minute). Targets may \textlf{resist(R)} each turn to ignore the effect (it does not end however). Only one action point may be gained or lost each turn in this way. \textlf{critical success} for the aethermancer on \textlf{resist} means the target cannot attempt \textlf{resist} next turn.
 \subsubsection{Upgrade: Field [3]}
 If used for 2 action points this affects all creatures within a targeted radius of 5 m (1 combat area).
 
 
 \subsection{Transfix (10) [3]}
-You project your aether into a creature, disrupting its aetheric field to fill its mind with a deluge of sensory information. A single target within range 2 (25 m) must \textlf{resist(R)} or stand transfixed (no actions allowed) for 10 minutes. A \textlf{resist} attempt may be made at the end of each turn to end the effect. This is \textlf{persistent} effect and any damage ends the effect immediately. 
+\textlf{Active perk}. You project your aether into a creature, disrupting its aetheric field to fill its mind with a deluge of sensory information. A single target within range 2 (25 m) must \textlf{resist(R)} or stand transfixed (no actions allowed) for 10 minutes. A \textlf{resist} attempt may be made at the end of each turn to end the effect. This is \textlf{persistent} effect and any damage ends the effect immediately. 
 \subsubsection{Upgrade: Field [4]}
 If used for 2 action points this manifestation affects all creatures within a radius of 5 m (1 combat area).
 \subsubsection{Upgrade: Amplification [3]}
@@ -733,7 +735,7 @@ If the victim of this effect is damaged or successfully \textlf{resist}, the man
 
 
 \subsection{Vortex (8) [3]}
-Infusing a sudden burst of aether into the air creates a resonance that roars out as a powerful vortex of wind. This stops the flight of projectiles entering a target 5 m (1 combat area) region within range 2 (25 m) until the end of the next round. The stopped projectiles hit any creature inside the vortex region (allocate hits randomly). 
+\textlf{Active perk}. Infusing a sudden burst of aether into the air creates a resonance that roars out as a powerful vortex of wind. This stops the flight of projectiles entering a target 5 m (1 combat area) region within range 2 (25 m) until the end of the next round. The stopped projectiles hit any creature inside the vortex region (allocate hits randomly). 
 \subsubsection{Upgrade: Howling winds [2]}
 \textlf{Vortex} can be manifested with ferocious winds that knock down all creatures in the target area if they fail a \textlf{resist(M)} check.
 \subsubsection{Upgrade: Swift-wind [2]}
@@ -741,12 +743,12 @@ Infusing a sudden burst of aether into the air creates a resonance that roars ou
 
 
 \subsection{Warp space (12) [5]}
-You create an aetheric resonance around a creature, warping the aetheric field of space itself. For 1 action point you can move a target creature, which can attempt to \textlf{resist(C)} if it wants to. This moves the target a distance up to range 2 (25 m). This cannot affect targets more than 1 size category larger than the aethermancer without 1 level of \textlf{critical success} for the aethermancer on \textlf{resist} per size additional category difference.
+\textlf{Active perk}. You create an aetheric resonance around a creature, warping the aetheric field of space itself. For 1 action point you can move a target creature, which can attempt to \textlf{resist(C)} if it wants to. This moves the target a distance up to range 2 (25 m). This cannot affect targets more than 1 size category larger than the aethermancer without 1 level of \textlf{critical success} for the aethermancer on \textlf{resist} per size additional category difference.
 
 
-\subsection{Weather sense (7) [2]}
-You attune to the aetheric fields of air and water, thus you can predict the weather up to 1 day + \textlf{wit} in advance.
-\subsubsection{Upgrade: Weather touch [4]}
+\subsection{Weather sense (-) [2]}
+\textlf{Passive perk}. You attune to the aetheric fields of air and water, thus you can predict the weather up to 1 day + \textlf{wit} in advance.
+\subsubsection{Upgrade: Weather touch (9+X) [4]}
 Your mastery of air and water allows you to nudge the weather. This lets you alter the weather, with the effect occurring after 5 - X days where X is the number of aether points spent on this manifestation. 
 
 
@@ -767,7 +769,7 @@ A character's body can only hold so much aether. To transcend this limitation, a
 \subsection{Producing a manifestation}
 Manifestations do not require the use of gestures or words, they are produced by the character's fine control of their own aetheric field. By attuning the vibrations of their bodies own aetheric field, the aethermancer can cascade changes through other nearby fields to produce physical effects. Self-taught aethermancers often use gestures, as the spotty nature of their learning can lead to a personal association between gestures and manifestations. The synod requires its trainees do not use them at all. A list of manifestations can be found in Section~\ref{sec:manifestations}.
 
-Manifestations are actions like any other, costing 1 action point unless otherwise specified. However, they also cost 1 point of aether, unless otherwise specified. Manifestations require the user to make an \textlf{aethermancy} check against a \textlf{difficulty} given in brackets on the manifestation description. If the aethermancer succeeds, they and the victim make a \textlf{resist} check to decide the effects. A \textlf{critical failure} during on the \textlf{aethermancy} check releases aether in an uncontrolled reaction (some suggestions are listed below).
+Manifestations are actions like any other, costing 1 action point unless otherwise specified. Manifestations require the user to make an \textlf{aethermancy} check against a \textlf{difficulty} given in brackets on the manifestation description. If the aethermancer succeeds, they must spend the required number of aether points (1 by default) and then apply the described effects. A \textlf{critical failure} during on the \textlf{aethermancy} check releases aether in an uncontrolled reaction (some suggestions are listed below).
 \begin{itemize}
 	\item Manifestation occurs adjacent to the aethermancer instead of targeted area
 	\item Manifestation occurs but changes from targeting enemies to allies or vice-a-versa
@@ -1017,8 +1019,7 @@ Aethershot & 12 & 1 Aethershot ammunition & - & Black powder & 4 d \\
 		Musket & 50 d & 2 & 6 & 2 & N & +1 & Pen 2 \\
 		Jezail & 70 d & 2 & 8 & 2 & N & +1 & Pen 2, \textlf{aim} + 1\\
 		Blunderbuss & 50 d & 2 & 4 & 3 & N & - & Cone, Pen 2\\
-		Bomb & 10 d & 1 & 3 & - & N & - & Burst 1, Thrown, Radius 0, \\
-		& & & & & & & \textlf{damage edge+} \\
+		Bomb & 10 d & 1 & 3 & - & N & - & Burst 1, Blast 0, \textlf{damage edge+}\\
 		\hline 
 	\end{tabular}
 	\label{tab:range-weps}    
@@ -1069,7 +1070,10 @@ Aethershot & 12 & 1 Aethershot ammunition & - & Black powder & 4 d \\
 This is special ammunition for firearms, infused with aetheric energies to increase its destructive potential. A shot made with such ammunition gains \textlf{edge+} on \textlf{damage checks}.
 
 \subsection{Blunderbuss}
-This weapon fires a scatter of shot in a cone, hitting up to 2 targets in a single combat area. The user can also declare using it point blank within range 0, then it hits one target only but has \textlf{Burst} +1. This weapon is also a robust object and can be used as a close combat weapon without incurring \textlf{edge-} on aim. It must be used in two hands for this purpose.
+This weapon fires a scatter of shot in a cone with \textlf{cleave} 2. The user can also declare using it point blank within range 0, then it hits one target only but has \textlf{Burst} +1. This weapon is also a robust object and can be used as a close combat weapon without incurring \textlf{edge-} on aim. It must be used in two hands for this purpose.
+
+\subsection{Bomb}
+The bomb is a thrown weapon that hits all targets within a chosen 5 m radius. The attacker rolls \textlf{aim} once and each target rolls \textlf{deflect}. This represents the effectiveness of targets taking cover against the thrower's placement of the bomb.
 
 \subsection{Cudgel}
 \textlf{Sneak attack critical hits} from a cudgel render their victim unconscious if they fail a \textlf{resist(M)} check vs 10 +  the wielder's \textlf{Power}.
@@ -1163,156 +1167,166 @@ This cost reflects an average price that the item would be purchasable for, from
 \section{Equipment}
 \subsection{Tools}
 
-\subsubsection*{Bandages}
+\subsubsection{Aethertech's tools}
+A set of instruments needed to measure the flow of aether as well as create aethertech circuits.
+
+\subsubsection{Bandages}
 Required by a healer to use his healing skill, each use of the skill consumes a bandage.
 
-\subsubsection*{Infuser's tools}
-A complex piece of equipment that allows an infuser to purify and distil various liquids, this is required for the creation of infusions (see Section~\ref{sec:infuse}).
+\subsubsection{Burglar's tools}
+A crowbar, 10 lockpicks, 5 m of rope, a hammer and chisel.
 
-\subsubsection*{Glass vial}
+\subsubsection{Glass vial}
 A simple glass vial with a stopper, used to hold liquids, this is needed to hold any brew created by an infuser (see Section~\ref{sec:infuse}).
 
-\subsubsection*{Lock-pick}
+\subsubsection{Infuser's tools}
+A complex piece of equipment that allows an infuser to purify and distil various liquids, this is required for the creation of infusions (see Section~\ref{sec:infuse}).
+
+\subsubsection{Lock-pick}
 A small piece of cunningly bent metal that can be used to open a lock with a Mechanical skill check opposed to the \textlf{difficulty} of the lock, on a failure the lock-pick breaks.
 
-\subsubsection*{Musical instrument}
+\subsubsection{Master-crafted tools}
+These are finely crafted versions of any type of tool, this adds a + 1 bonus to any rolls made using the tools.
+
+\subsubsection{Musical instrument}
 A simple instrument for making music.
 
-\subsubsection*{Wood-axe}
-An axe for chopping up wood.
-
-\subsubsection*{Master-crafted tools}
-These are finely crafted versions of any type of tool, this adds a + 1 bonus to any rolls made using the tools.
+\subsubsection{Survivalist's tools}
+A pot, 2 full water-skins, a tinder box, 5 days of trail rations, and a tent.
 
 \subsection{Adventuring gear}
 
-\subsubsection*{Backpack}
+\subsubsection{Backpack}
 A large but otherwise conventional satchel.
 
-\subsubsection*{Barrel}
+\subsubsection{Barrel}
 A large barrel made of wood or crab chitin, bound with iron rings. The barrel can hold about 50 litres.
 
-\subsubsection*{Basket}
+\subsubsection{Basket}
 A simple wicker basket for carrying small loads.
 
-\subsubsection*{Candle}
+\subsubsection{Candle}
 A small candle that that produces \textlf{low} light in a 5 m radius, this candle can burn for up to 3 hours.
 
-\subsubsection*{Canvas}
+\subsubsection{Canvas}
 A sheet of water-proof canvas. The price depends on the size of the sheet.
 
-\subsubsection*{Chain}
+\subsubsection{Chain}
 A metal chain made up of heavy steel links, the chain is strong enough to support very large weights, up to 500 kg.
 
-\subsubsection*{Crowbar}
+\subsubsection{Crowbar}
 A simple steel crowbar used for levering open doors or hinges. Using a crowbar adds \textlf{edge+} to rolls made using your Might to force open any hinged container or door.
 
-\subsubsection*{Firewood}
+\subsubsection{Firewood}
 Wood for keeping a fire burning for one day.
 
-\subsubsection*{Fishing tackle}
+\subsubsection{Fishing tackle}
 A fishing line, a hook, sinkers and lures. This can be used to attempt to catch fish with the \textlf{Survival} skill, the \textlf{difficulty} of this is dependent on the speed of the water and type of the fish.
 
-\subsubsection*{Grappling hook}
+\subsubsection{Grappling hook}
 A heavy iron hook used for scaling near vertical surfaces. This hook will hold the attached rope in place after being successfully thrown to the point you wish to climb to. The hook also makes an effective weapon.
 
-\subsubsection*{Hammer}
+\subsubsection{Hammer}
 A simple hammer for hitting stuff and pitching tents.
 
-\subsubsection*{Ladder}
+\subsubsection{Ladder}
 A length of ladder which can be climbed without needing an Athletics check.
 
-\subsubsection*{Lantern}
+\subsubsection{Lantern}
 A hooded lantern used for projecting \textlf{full} light directionally, up to 13 m from the bearer. This uses 0.5 kg of oil to burn for 24 hours.
 
-\subsubsection*{Lantern oil}
+\subsubsection{Lantern oil}
 Enough oil to power a standard lantern for 24 hours. Highly flammable.
 
-\subsubsection*{Mirror}
+\subsubsection{Mirror}
 A simple shiny surface (glass or metal) that reflects light. Useful for looking around corners.
 
-\subsubsection*{Needle}
+\subsubsection{Needle}
 A sharp needle for use in sewing or stitching wounds.
 
-\subsubsection*{Paper}
+\subsubsection{Paper}
 A single sheet of paper for writing on.
 
-\subsubsection*{Pick}
+\subsubsection{Pick}
 A simple pick used for breaking earth or skulls.
 
-\subsubsection*{Pole}
+\subsubsection{Pole}
 A length of wooden or metal pole.
 
-\subsubsection*{Pot}
+\subsubsection{Pot}
 A cooking pot, about 30 cm in diameter.
 
-\subsubsection*{Quill}
+\subsubsection{Quill}
 A feather quill used for writing.
 
-\subsubsection*{Rope}
+\subsubsection{Rope}
 A length of rope capable of supporting the weight of three people ($\sim$250 kg).
 
-\subsubsection*{Sack}
+\subsubsection{Sack}
 A large rough cloth bag.
 
-\subsubsection*{Spade}
+\subsubsection{Spade}
 A digging implement (can be used to hit people as well).
 
-\subsubsection*{Spyglass}
+\subsubsection{Spyglass}
 A telescope capable of magnifying things from up to a mile away.
 
-\subsubsection*{Tent}
+\subsubsection{Tent}
 A canvas tent to keep you dry at night, this can house up to two man-sized creatures.
 
-\subsubsection*{Tinder box}
+\subsubsection{Tinder box}
 A small box containing fast lighting twigs, used to rapidly start a fire.
 
-\subsubsection*{Torch}
+\subsubsection{Torch}
 Provides \textlf{full} light up to a 5 m radius and \textlf{low} light within 12 m. The torch can burn for 4 hours.
 
-\subsubsection*{Trail rations}
+\subsubsection{Trail rations}
 Generally dried meat, bread and cheese. Long lasting food-stuffs to nourish a traveller.
 
-\subsubsection*{Water-skin}
+\subsubsection{Water-skin}
 A hide bag used for carrying water, this carries water for one person for 5 days.
+
+\subsubsection{Wood-axe}
+An axe for chopping up wood.
 
 \subsection{Mounts}
 
-\subsubsection*{Cart crab}
+\subsubsection{Cart crab}
 A crab the size of a small horse with a thick shell and powerful legs. These creatures can pull heavy loads but are slow moving. A cart crab has a combat movement distance of 1, it can carry weights of up to 400 kg while still being to walk all day with no appreciable strain. Carrying weights of 400 kg or more risks injuring the crab if done for prolonged periods. This creature is not trained for war and will likely remain stationary and lash out at approaching foes, it has Deflect -2 and Toughness 12.
 
-\subsubsection*{Pony}
+\subsubsection{Pony}
 A small hard working pony, capable of carrying an full grown small creature or the child of a man sized creature. A pony has a combat movement distance of 2. Such a creature can carry weights of up to 100 kg while still being to walk or trot all day with no appreciable strain. Carrying weights of 150 kg or more risks injuring the horse if done for prolonged periods. This horse is not trained for war and may panic, it has Deflect 0 and Toughness 8.
 
-\subsubsection*{Light horse}
+\subsubsection{Light horse}
 A swift if none too tough horse, a Light Horse has a combat movement distance of 4. A light horse can gallop up to 2 hours a day at a speed of five times faster than a man, any longer risks injuring the horse. This horse can only move a distance of 2 per movement action while carrying a heavily-armoured rider. A light horse can carry weights of up to 80 kg while still being to walk or trot all day with no appreciable strain. Carrying weights of 130 kg or more risks injuring the horse if done for prolonged periods. This horse is not trained for war and may panic, it has Deflect 0 and Toughness 9.
 
-\subsubsection*{Cart horse}
+\subsubsection{Cart horse}
 A heavy farm horse capable of carrying heavy loads and working all day, however, it is not capable of maintaining very rapid speeds. A cart horse has a combat movement distance of 2. A cart horse can carry weights of up to 200 kg while still being to walk or trot all day with no appreciable strain. Carrying weights of 300 kg or more risks injuring the horse if done for prolonged periods. This horse is not trained for war and may panic, it has Deflect -1 and Toughness 10.
 
-\subsubsection*{Heavy horse}
+\subsubsection{Heavy horse}
 A strong and reasonably quick horse. This horse can carry a man in heavy armour while moving at full speed. This horse has a combat movement distance of 3. Such a creature can carry weights of up to 120 kg while still being to walk or trot all day with no appreciable strain. Carrying weights of 200 kg or more risks injuring the horse if done for prolonged periods. This horse is not trained for war and may panic, it has Deflect -1 and Toughness 10.
 
-\subsubsection*{Destrier (war horse)}
+\subsubsection{Destrier (war horse)}
 A heavy horse trained for battle, the destrier is by far the largest breed of horse, standing over 2 metres at the shoulder. Its war training makes it a savage weapon in its own right and it has close-combat Aim +1, Deflect 0, Toughness 10, Power +1, and combat movement range 3. A destrier can carry weights of up to 200 kg while still being to walk or trot all day with no appreciable strain. Carrying weights of 300 kg or more risks injuring the horse if done for prolonged periods.
 
-\subsubsection*{Simple saddle}
+\subsubsection{Simple saddle}
 A rough worked leather saddle, needed for sitting astride your mount. A saddle is fastened with girth buckles and has attached stirrups.
 
-\subsubsection*{War saddle}
+\subsubsection{War saddle}
 A heavy saddle needed to support a fully-armoured knight, this saddle is designed also to allow the knight to wield a lance one handed.
 
-\subsubsection*{Racing saddle}
+\subsubsection{Racing saddle}
 A saddle built for race horses, it is light weight and fine craftsmanship add 1 to the horses' combat movement distance.
 
-\subsubsection*{Tack}
+\subsubsection{Tack}
 Reins, bit, bridle and other equipment necessary for riding a mount. Riding bareback increases the \textlf{difficulty} of all ride checks by 2.
 
-\subsubsection*{Feed}
+\subsubsection{Feed}
 Food for a mount for one day.
 
 \chapter{Equipment tables}
 \begin{table}[ht]
+	\parbox{0.45\hsize}{
 	\centering
 	\caption{Tools}
 	\label{tab:tools}
@@ -1327,10 +1341,44 @@ Food for a mount for one day.
 		Survivalist tools & 10 d \\
 		Glass Vials (5)& 5 d\\
 		Lock-picks (5) & 2 d\\
-		Musical instrument & 15 d\\
-		Wood-axe & 3 d\\		
+		Musical instrument & 15 d\\		
 		\hline
 		Master-crafted tools & + 50 d\\
+		\hline
+	\end{tabular}}
+	\parbox{0.45\hsize}{
+	\centering
+	\caption{Clothes}
+	\begin{tabular}{|l|l|}
+		\hline
+		Item & Cost\\ [0.5ex]
+		\hline
+		Peasant & 10 c\\
+		Scholar & 1 d\\
+		Cold weather & 1 d\\
+		Noble & 30 d\\
+		Merchant & 5 d\\
+		\hline
+	\end{tabular}}
+
+	\centering
+	\caption{Mounts}
+	\begin{tabular}{|l|l|}
+		\hline
+		Item & Cost\\ [0.5ex]
+		\hline
+		Cart crab & 70 d \\ 
+		Pony & 180 d\\
+		Light horse & 180 d\\
+		Cart horse & 240 d\\
+		Heavy horse & 240 d\\
+		War horse & 480 d\\
+		\hline
+		Simple saddle & 5 d\\
+		War saddle & 15 d\\
+		Racing saddle & 10 d\\
+		Tack & 2 d\\
+		Feed, 1 day & 5 c\\
 		\hline
 	\end{tabular}
 \end{table}
@@ -1371,46 +1419,8 @@ Food for a mount for one day.
 		Tinder box & 2 d & -\\
 		Torch & 2 c & 0.1 kg\\
 		Trail rations 1 day & 10 c & 0.1 kg\\
-		Water-skin (full) & 50 c & 3 kg\\		
-		\hline
-	\end{tabular}
-\end{table}
-
-\begin{table}[ht]
-	\centering
-	\caption{Mounts}
-	\begin{tabular}{|l|l|}
-		\hline
-		Item & Cost\\ [0.5ex]
-		\hline
-		Cart crab & 70 d \\ 
-		Pony & 180 d\\
-		Light horse & 180 d\\
-		Cart horse & 240 d\\
-		Heavy horse & 240 d\\
-		War horse & 480 d\\
-		\hline
-		Simple saddle & 5 d\\
-		War saddle & 15 d\\
-		Racing saddle & 10 d\\
-		Tack & 2 d\\
-		Feed, 1 day & 5 c\\
-		\hline
-	\end{tabular}
-\end{table}
-
-\begin{table}[ht]
-	\centering
-	\caption{Clothes}
-	\begin{tabular}{|l|l|}
-		\hline
-		Item & Cost\\ [0.5ex]
-		\hline
-		Peasant & 10 c\\
-		Scholar & 1 d\\
-		Cold weather & 1 d\\
-		Noble & 30 d\\
-		Merchant & 5 d\\
+		Water-skin (full) & 50 c & 3 kg\\	
+		Wood-axe & 3 d & 2 kg\\	
 		\hline
 	\end{tabular}
 \end{table}
